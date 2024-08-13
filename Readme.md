@@ -1,5 +1,5 @@
-# Codecademy Exercises Lists
+# "codecademy" Exercises Lists
 
 ## 1.HTML Exercises
 
-### 1.1-Brown Bears HTML Beginers Project
+### 1.1-Brown Bears HTML Beginners Project
