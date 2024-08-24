@@ -40,7 +40,10 @@
         <input id="yes" type="radio" name="answer" value="yes" required />
         <input id="no" type="radio" name="answer" value="no" /><br />
         <label for="speed">Relative speed (ends in -er):</label>
-        <input id="speed" type="number" name="speed" required /><br />
+        <select id="speed" name="speed" required>
+          <option value="faster">Faster</option>
+          <option value="slower">Slower</option></select
+        ><br />
 
         <input type="submit" value="Form My Story!" />
       </form>
