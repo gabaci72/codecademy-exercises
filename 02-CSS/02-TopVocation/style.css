@@ -58,4 +58,10 @@ h5 {
   color: cornflowerblue;
 }
 
-h2.destination { font-family: Tahoma;}
+h2.destination {
+  font-family: Tahoma;
+}
+
+.description h5 {
+  color: blueviolet;
+}
