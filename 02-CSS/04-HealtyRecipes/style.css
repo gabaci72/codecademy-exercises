@@ -7,3 +7,7 @@ img { height: 150px; }
 #cook-time {
   font-weight: bold;
 }
+
+.ingredients li {
+  list-style: square;
+}
