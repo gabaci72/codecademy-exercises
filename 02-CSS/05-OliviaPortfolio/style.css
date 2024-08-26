@@ -1,3 +1,8 @@
 .header {
     background-color: cornflowerblue;
+    text-align: center;
+  }
+  
+  .about-me {
+    font-size: 20px;
   }
