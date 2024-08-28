@@ -29,13 +29,14 @@ body {
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 2px;
+    margin: 10px 0;
   }
   
   nav a {
     color: #666666;
   }
   
-  /* Content Container */
+  /* Content Container */ 
   
   .content {
     width: 100%;
