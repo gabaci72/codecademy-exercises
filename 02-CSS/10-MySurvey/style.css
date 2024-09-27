@@ -59,7 +59,7 @@ h4 {
   font-weight: 300;
   letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 p {
@@ -83,7 +83,7 @@ footer {
 
 .question {
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .answer {
