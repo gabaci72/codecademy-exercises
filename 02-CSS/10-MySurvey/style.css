@@ -81,6 +81,7 @@ footer {
   padding: 40px;
   text-align: center;
   width: 100%;
+  position: relative;
 }
 
 .question {
