@@ -93,17 +93,16 @@ footer {
   text-align: center;
   position: relative;
   top: 40px;
+  clear: left;
 }
 
 .answer {
   border: 1px solid #466995;
   margin: 20px;
   display: inline-block;
-  float: left;
 }
 
 .answer:hover {
   background: #C0D6DF;
   color: #FFF;
-  
 }
