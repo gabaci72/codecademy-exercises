@@ -6,6 +6,7 @@ body {
 header {
   background-color: #466995;
   border-bottom: 1px solid #466995;
+  position: absolute;
 }
 
 ul {
@@ -59,7 +60,7 @@ h4 {
   font-weight: 300;
   letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 p {
