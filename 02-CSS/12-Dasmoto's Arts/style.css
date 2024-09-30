@@ -60,3 +60,25 @@ p {
     font-family: Helvetica;
     color: black;
 }
+
+h2 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: skyblue;
+    width: 100%;
+}
+h3 {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+#finnishpaint {
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+}
