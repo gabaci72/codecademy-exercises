@@ -1,0 +1,8 @@
+h1 {
+    background-image: url('./pattern.jpeg'); /* Pattern resminizin yolu */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Metin rengi */
+    padding: 20px; /* İçerikle arka plan arasında boşluk */
+    text-align: center;
+}
