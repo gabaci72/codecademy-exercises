@@ -17,12 +17,33 @@ h1 {
     font-weight: bold;
     color: #ffffff;
     background-color: mediumspringgreen;
+    width: 100%;
 }
 
 #hacksaw {
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;    
+}
+
+#phacksaw {
+    font-family: Helvetica;
+    color: black;
+    text-align: left;
+}
+
+.price {
+    font-family: Helvetica;
+    color: blue;
+    font-weight: bold;
+}
+
+#Frames {
     font-family: Helvetica;
     font-size: 32px;
     font-weight: bold;
-    color: blue;
+    color: #ffffff;
     background-color: lightcoral;
+    width: 100%;
 }
