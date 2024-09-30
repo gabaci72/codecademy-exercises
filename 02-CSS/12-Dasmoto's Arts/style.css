@@ -10,3 +10,19 @@ h1 {
     font-weight: bold;
     color:khaki;
 }
+
+#Brushes {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: mediumspringgreen;
+}
+
+#hacksaw {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: blue;
+    background-color: lightcoral;
+}
