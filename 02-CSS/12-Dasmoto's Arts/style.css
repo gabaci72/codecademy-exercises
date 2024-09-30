@@ -5,4 +5,8 @@ h1 {
     color: white; /* Metin rengi */
     padding: 20px; /* İçerikle arka plan arasında boşluk */
     text-align: center;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color:khaki;
 }
