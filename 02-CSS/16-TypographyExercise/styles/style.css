@@ -45,7 +45,6 @@ p {
   background-color: #fff;
   font-size: 14px;
   font-weight: 900;
-
 }
 
 .header li {
@@ -94,7 +93,8 @@ a.home {
 .font-card .creator {
   padding: 10px 20px;
   font-size: 16px;
-  
+  font-style: italic;
+
 }
 
 .sample {
