@@ -35,7 +35,6 @@ p {
   margin: 0 auto;
   padding: 20px;
   text-align: justify;
-
 }
 
 
@@ -120,7 +119,7 @@ a.home {
 }
 
 .space {
-  
+  font-family: 'Space Mono', monospace;
 }
 
 .bold {
@@ -135,3 +134,28 @@ a.home {
   font-weight: normal;
   font-style: italic;
 }
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
