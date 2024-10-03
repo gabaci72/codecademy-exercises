@@ -11,3 +11,7 @@ a:hover {
 a:visited {
   color: #466995;
 }
+
+.question-link:visited {
+  color: #ffffff;
+}
