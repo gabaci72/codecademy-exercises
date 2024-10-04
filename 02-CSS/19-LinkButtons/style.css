@@ -15,3 +15,7 @@ a:visited {
 .question-link:visited {
   color: #ffffff;
 }
+
+a:active {
+  color: #DBE9EE ;
+}
