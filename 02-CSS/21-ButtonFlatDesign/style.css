@@ -3,8 +3,11 @@
 }
 
 a {
-  cursor: pointer;
   text-decoration: underline;
+}
+
+a, .answer {
+  cursor: pointer;
 }
 
 a:link {
@@ -27,8 +30,10 @@ a:active, .answer:active {
   border: 1px solid #466995;
 }
 
-.answer:active {
+.answer:hover {
   background-color: #C0D6DF;
-  color: #ffffff;
 }
 
+.answer:active {
+  color: #ffffff;
+}
