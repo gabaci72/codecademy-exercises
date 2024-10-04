@@ -16,6 +16,6 @@ a:visited {
   color: #ffffff;
 }
 
-a:active {
-  color: #DBE9EE ;
+a:active, .question-link:active {
+  color: #DBE9EE;
 }
