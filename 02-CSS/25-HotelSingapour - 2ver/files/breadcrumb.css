@@ -16,3 +16,8 @@
   content: ">";
   color: gray;
 }
+
+.attribute a {
+  color: gray;
+}
+
