@@ -9,9 +9,9 @@
   }
   
   .breadcrumb a {
-  
+	text-decoration: none;
   }
   
   .breadcrumb a:hover {
-  
+	color: red;
   }
