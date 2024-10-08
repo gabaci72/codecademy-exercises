@@ -2,3 +2,16 @@
     display: inline;
   }
   
+  .breadcrumb li+li::before {
+    content: "/ ";
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #000; /* Default color */
+  }
+  
+  .breadcrumb a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  
