@@ -1,7 +1,11 @@
+.breadcrumb {
+  text-align: left;
+}
 .breadcrumb li {
-    display: inline;
-  }
-  .breadcrumb li+li::before {
-    color: gray;
-    content: ">";
-  }
+  display: inline;
+}
+
+
+.breadcrumb a {
+  display: inline;
+} 
