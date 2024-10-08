@@ -31,5 +31,17 @@
     transition: font-size .1s ease-in-out;
   }
   
+  .activity {
+    border: 1px solid #2176FF;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #2176FF; /* Optional: Add a background color */
+    color: #ffffff; /* Optional: Set text color */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Ensure the element behaves like a button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Optional: Add transition for smooth effect */
+  }
+  
   
   
