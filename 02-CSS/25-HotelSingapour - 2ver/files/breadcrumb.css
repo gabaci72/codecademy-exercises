@@ -11,3 +11,8 @@
 .breadcrumb a {
   display: inline;
 }
+
+.breadcrumb li.location+li.location::before {
+  content: ">";
+  color: gray;
+}
