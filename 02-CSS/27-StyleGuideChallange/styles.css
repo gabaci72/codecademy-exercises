@@ -42,7 +42,8 @@ body {
   
   .DeepSkyBlue {
     background-color:#00BFFF;
-    color: red;
+    color: whitesmoke;
+    font-style: bolder;
   }
   
   .MediumVioletRed {
@@ -57,6 +58,15 @@ body {
   
   .Bisque {
     background-color: #FFE4C4;
+  }
+
+  .Chocolate {
+    background-color: #D2691E;
+    color: #fff;
+  }
+
+  .NavajoWhite {
+    background-color: #FFDEAD;
   }
   
   .font-panel {
