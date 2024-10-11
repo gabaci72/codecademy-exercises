@@ -1,3 +1,22 @@
+
+        .navbar {
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; 
+          }
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 10%;
@@ -21,22 +40,23 @@ body {
     min-height: 100px;
   }
   
-  .cool-blue {
-    background-color: #2d5dcc;
+  .DeepSkyBlue {
+    background-color:#00BFFF;
+    color: red;
+  }
+  
+  .MediumVioletRed {
+    background-color: #C71585;
     color: #fff;
   }
   
-  .pink {
-    background-color: #d957d9;
-    color: #000;
+  .OliveDrab {
+    background-color: #6B8E23;
+    color: #fff;
   }
   
-  .mint-green {
-    background-color: #4fe0b0;
-  }
-  
-  .beige {
-    background-color: #efd9ca;
+  .Bisque {
+    background-color: #FFE4C4;
   }
   
   .font-panel {
