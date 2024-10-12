@@ -28,11 +28,11 @@ body {
   }
   
   .top.side {
-  
+    flex-grow: 1;
   }
   
   .top.center {
-  
+    flex-grow: 1;
   }
   
   .middle.side {
