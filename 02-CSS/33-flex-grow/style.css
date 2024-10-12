@@ -44,11 +44,11 @@ h2 {
 }
 
 .bottom.side {
-
+  flex-grow: 1;
 }
 
 .bottom.center {
-	
+	flex-grow: 2;
 }
 
 #top,
