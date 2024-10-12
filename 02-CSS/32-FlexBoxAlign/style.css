@@ -22,6 +22,7 @@ body {
     width: 125px;
     background-color: dodgerblue;
     border: 2px solid lightgrey;
+    min-height: 75px;
   }
   
   #baseline .center {
@@ -31,17 +32,18 @@ body {
   }
   
   #flexstart {
-  
+    align-items: flex-start;
   }
   
   #flexend {
-  
+    align-items: flex-end;
   }
   
   #center {
-  
+    align-items: center;
   }
   
   #baseline {
+    align-items: baseline;
+  }
   
-  }  
