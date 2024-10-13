@@ -30,6 +30,7 @@ body {
     border: 1px solid white;
     width: 100px;
     height: 100px;
+    flex-grow: 1;
   }
   
   #row {
