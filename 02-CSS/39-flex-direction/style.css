@@ -35,7 +35,7 @@ body {
   }
   
   #row-reverse {
-  
+    flex-direction: row-reverse;
   }
   
   #column {
@@ -44,4 +44,5 @@ body {
   
   #column-reverse {
   
-  }  
+  }
+  
