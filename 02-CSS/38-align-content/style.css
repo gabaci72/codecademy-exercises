@@ -32,11 +32,11 @@ body {
   }
   
   #flexend {
-  
+    align-content: flex-end;
   }
   
   #center {
-  
+    align-content: center;
   }
   
   #between {
