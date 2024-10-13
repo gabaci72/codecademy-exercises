@@ -44,11 +44,11 @@ h2 {
 }
 
 .bottom.side {
-
+  
 }
 
 .bottom.center {
-	
+	flex-shrink: 2;
 }
 
 #top,
