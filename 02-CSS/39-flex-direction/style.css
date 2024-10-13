@@ -39,7 +39,7 @@ body {
   }
   
   #column {
-  
+    flex-direction: column;
   }
   
   #column-reverse {
