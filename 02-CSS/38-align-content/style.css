@@ -40,7 +40,7 @@ body {
   }
   
   #between {
-  
+    align-content: space-between;
   }
   
   #around {
