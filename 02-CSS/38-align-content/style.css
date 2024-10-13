@@ -20,7 +20,7 @@ body {
   .left,
   .center,
   .right {
-    height: 75px;
+    min-height: 75px;
     width: 200px;
     margin: 2px;
     background-color: dodgerblue;
@@ -44,6 +44,5 @@ body {
   }
   
   #around {
-  
-  }
-  
+    align-content: space-around;
+  }  
