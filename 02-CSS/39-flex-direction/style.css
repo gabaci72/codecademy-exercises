@@ -21,6 +21,7 @@ body {
     background-color: dodgerblue;
     display: flex;
     max-height: 600px;
+    align-items: center;
   }
   
   .box {
