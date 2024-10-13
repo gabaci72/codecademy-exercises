@@ -36,13 +36,12 @@ body {
   
   
   #bottom .side {
-    flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: 75px;
+   flex: 1 2 75px;
   }
   
   #bottom .center {
     flex-grow: 2;
     flex-shrink: 1;
     flex-basis: 100px;
-  }  
+  }
+  
