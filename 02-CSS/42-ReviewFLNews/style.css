@@ -89,10 +89,11 @@ html, body {
     background-color: #ffc200;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   
   .col {
-  
+    display: inline-flex;
   }
   
   #expertise {
