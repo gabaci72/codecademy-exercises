@@ -95,6 +95,7 @@ html, body {
   .col {
     display: inline-flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   
   #expertise {
