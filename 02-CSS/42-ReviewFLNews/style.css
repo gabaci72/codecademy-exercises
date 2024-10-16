@@ -87,6 +87,8 @@ html, body {
   /*Expertise Section*/
   .cards {
     background-color: #ffc200;
+    display: flex;
+  
   }
   
   .col {
