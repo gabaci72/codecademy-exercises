@@ -94,6 +94,7 @@ html, body {
   
   .col {
     display: inline-flex;
+    flex-direction: column;
   }
   
   #expertise {
