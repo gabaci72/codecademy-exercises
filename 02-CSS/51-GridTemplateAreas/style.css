@@ -19,6 +19,7 @@
   
   header {
     background-color: dodgerblue;
+    grid-area: header;
   }
   
   nav {
