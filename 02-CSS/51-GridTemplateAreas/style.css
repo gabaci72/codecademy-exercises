@@ -9,6 +9,7 @@
       "nav nav"
       "left right"
       "footer footer";
+    grid-template-columns: 200px 400px;
   }
   
   v
