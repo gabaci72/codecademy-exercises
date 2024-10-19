@@ -2,6 +2,7 @@
   border: 2px blue solid;
   height: 500px;
   display: grid;
+  grid-template-columns: 25% 25% 2fr 1fr;
 }
 
 
