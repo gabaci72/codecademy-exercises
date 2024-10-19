@@ -10,6 +10,7 @@
       "left right"
       "footer footer";
     grid-template-columns: 200px 400px;
+    grid-template-rows: 150px 200px 600px 200px;
   }
   
   v
