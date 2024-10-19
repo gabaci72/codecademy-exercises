@@ -8,9 +8,9 @@
 }
 
 .a {
-  grid-row: 5 / 7;
-  grid-column: 1 / span 2;
+  grid-area: 5 / 1 / span 2 / span 2;
 }
+
 
 .b {
   grid-area: 2 / 2 / span 3 / span 6;
