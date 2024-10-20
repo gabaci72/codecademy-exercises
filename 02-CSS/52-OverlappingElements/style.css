@@ -34,6 +34,7 @@ nav {
 
 .overlap {
   background-color: lightcoral;
+  grid-area: 6 / 4 / 8 / 6;
 }
 
 footer {
