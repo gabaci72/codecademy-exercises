@@ -35,8 +35,10 @@ nav {
 .overlap {
   background-color: lightcoral;
   grid-area: 6 / 4 / 8 / 6;
+  z-index: 5;
 }
 
 footer {
   background-color: dodgerblue;
+  grid-area: 9 / 1 / 13 / 7;
 }
