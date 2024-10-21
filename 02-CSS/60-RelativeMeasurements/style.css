@@ -50,9 +50,7 @@ html {
   }
   
   #blog .post {
-    
-    
-  
+    width: 52%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +61,7 @@ html {
     line-height: 1.8;
     color: #444444;
   }
+  
   
   .post h2 {
     font-size: 1.875rem;
