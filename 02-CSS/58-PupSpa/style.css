@@ -97,11 +97,11 @@ img {
 }
 
 .one {
-
+  grid-column: 1 / span 3; /* Starts in column 1 and spans 3 columns */
 }
 
 .two {
-
+  grid-column: 4 / span 3; /* Starts in column 4 and spans the remaining 3 columns */
 }
 
 footer {
