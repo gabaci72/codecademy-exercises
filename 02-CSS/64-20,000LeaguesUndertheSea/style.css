@@ -196,7 +196,7 @@ html {
     opacity: 0;
     font-family: "Proza Libre", sans-serif;
     font-size: 1.5rem;
-  
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
   .definable:hover .definition-container {
