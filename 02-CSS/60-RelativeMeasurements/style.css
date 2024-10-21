@@ -42,7 +42,7 @@ html {
   /* Blog Post */
   
   #blog {
-    
+    width: 86%;
     margin: auto;
     display: flex;
     flex-direction: column;
