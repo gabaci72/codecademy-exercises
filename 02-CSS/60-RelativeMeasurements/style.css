@@ -18,7 +18,7 @@ body {
 }
 
 .image-container img {
-  
+  max-width: 100%;
 }
 
 /* Banner Section */
