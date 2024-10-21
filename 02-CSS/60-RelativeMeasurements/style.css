@@ -91,12 +91,13 @@ body {
 /* Blog Images */
 
 .images {
-  
+  margin-bottom: 20%;
 }
 
 .images .image-container {
   display: inline-block;
   width: 50%;
+  
 }
 
 /* Footer */
