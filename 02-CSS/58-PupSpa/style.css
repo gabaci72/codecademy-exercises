@@ -111,3 +111,7 @@ footer {
   letter-spacing: 0.4px;
 
 }
+header, .banner, .about, footer {
+  grid-column-start: 1;
+  grid-column-end: 7; /* Ending column is exclusive */
+}
