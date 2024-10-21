@@ -68,17 +68,18 @@ img {
 
 }
 
-.address {
-
+..address {
+  grid-column: 1 / span 2; /* Spans the first 2 columns */
 }
 
 .hours {
-
+  grid-column: 3 / span 2; /* Spans the 3rd and 4th columns */
 }
 
 .call-us {
-
+  grid-column: 5 / span 2; /* Spans the 5th and 6th columns */
 }
+
 
 .icon {
   height: 80px;
