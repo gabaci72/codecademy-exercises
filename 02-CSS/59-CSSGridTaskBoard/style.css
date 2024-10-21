@@ -73,10 +73,7 @@ input {
 .card-column input {
 	height: 18px;
   margin-left: 15px;
-  display: grid;		
-  grid-template-rows: 20px repeat(5, 100px);
 
-}
 
 .search-icon {
 	float: left;	
@@ -88,6 +85,10 @@ input {
 	background-color: #ffffff;
 	gap: 10px;
 	min-height: 700px;
+    display: grid;		
+    grid-template-rows: 20px repeat(5, 100px);
+    align-content: space-around;
+}
 }
 
 .card-column h2 {
