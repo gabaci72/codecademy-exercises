@@ -72,7 +72,8 @@ input {
 
 .card-column input {
 	height: 18px;
-  margin-left: 15px;		
+  margin-left: 15px;
+  display: grid;		
 }
 
 .search-icon {
