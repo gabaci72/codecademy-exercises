@@ -82,7 +82,7 @@ html {
   }
   
   .post .image-container {
-    
+      width: 100%;
   }
   
   /* Blog Images */
