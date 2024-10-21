@@ -14,7 +14,7 @@ body {
 }
 
 .image-container {
-  
+   overflow: hidden;
 }
 
 .image-container img {
