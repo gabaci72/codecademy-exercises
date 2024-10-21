@@ -85,9 +85,16 @@ input {
 	background-color: #ffffff;
 	gap: 10px;
 	min-height: 700px;
-    display: grid;		
-    grid-template-rows: 20px repeat(5, 100px);
+   /* display: grid;		 */
+   /* grid-template-rows: 20px repeat(5, 100px); */
+  /* align-content: space-around; */
+  /* grid-auto-rows: 100px; */
+    display: grid;
+    grid-template-rows: 20px; /* Explicitly set the first row */
+    grid-auto-rows: 100px; /* Implicitly set additional rows */
     align-content: space-around;
+}
+
 }
 }
 
