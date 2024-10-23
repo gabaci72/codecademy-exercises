@@ -19,3 +19,5 @@ def add_cheese(being_cooked):
 # Paste your code on the lines below:
 
 add_spinach(on_the_griddle)
+add_mushrooms(on_the_griddle)
+add_cheese(on_the_griddle)
