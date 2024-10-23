@@ -10,10 +10,13 @@ luxurious_lamp_description = '''
 Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.
 '''
 luxurious_lamp_price = 52.15
-salex_tax = .088
+sales_tax = .088
 customer_one_total = 0
 customer_one_itemization = ""
 customer_one_total += lovely_loveseat_price
 customer_one_itemization += lovely_loveseat_description
 customer_one_total += luxurious_lamp_price
 customer_one_itemization += luxurious_lamp_description
+customer_one_tax = customer_one_total * sales_tax
+customer_one_total += customer_one_tax
+print("Customer One Items:")
