@@ -1,0 +1,46 @@
+Purpose
+Does the code do what it's supposed to do?
+Your code successfully creates a receipt system for the furniture store, calculating the total cost including sales tax and itemizing the purchased items.
+Consider adding comments to explain each step of the process, especially where calculations are performed, to enhance understanding.
+
+# Add the price of the Lovely Loveseat to the total
+customer_one_total += lovely_loveseat_price
+
+Ensure that all tasks are completed, such as adding the description of the Stylish Settee to the itemization if it was intended to be purchased.
+
+customer_one_itemization += lovely_loveseat_description
+# Add the description of the Stylish Settee if purchased
+# customer_one_itemization += stylish_settee_description
+
+Readability
+Is the code easy to understand?
+Your code is well-structured with clear variable names that describe the items and their prices.
+Use consistent string delimiters for better readability. Consider using double quotes for all strings.
+
+stylish_settee_description = """Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."""
+
+Add spacing between logical sections of the code to improve readability.
+
+customer_one_total += luxurious_lamp_price
+
+customer_one_itemization += luxurious_lamp_description
+
+Performance
+Does the code run efficiently?
+The code efficiently calculates the total cost and itemizes the purchases without unnecessary complexity.
+Consider using a function to handle the calculation of the total cost and itemization for better reusability.
+
+def add_item_to_receipt(item_price, item_description):
+    global customer_one_total, customer_one_itemization
+    customer_one_total += item_price
+    customer_one_itemization += item_description
+
+add_item_to_receipt(lovely_loveseat_price, lovely_loveseat_description)
+
+Implement error handling for potential issues, such as invalid price values, to make the code more robust.
+
+try:
+    customer_one_total += customer_one_tax
+except TypeError:
+    print("Error: Invalid tax calculation.")
+
