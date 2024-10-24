@@ -12,16 +12,27 @@ new_df = pd.merge(user_data, pop_data)
 new_df.loc[new_df.population_proper < 100000, "location"] = "rural"
 new_df.loc[new_df.population_proper >= 100000, "location"] = "urban"
 
-# Paste code for scatter plot:
-x = new_df["population_proper"]
-y = new_df["age"]
+# Plot linear regression:
+sns.regplot(x="population_proper", y="age", data=new_df)
+plt.show()
 
-plt.scatter(x, y, alpha=0.5)
+
+# Paste code to change the figure style and palette:
+
+plt.close()
+
+sns.set_style("darkgrid")
+sns.set_palette("bright")
+sns.despine()
+
 sns.regplot(x="population_proper", y="age", data=new_df)
 
-# Paste code for linear regression:
-
-
-# Show plot
 plt.show()
+
+# Paste code to change the axes:
+
+
+
+# Paste code to title the axes and the plot: 
+
 
