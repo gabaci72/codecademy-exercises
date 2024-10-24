@@ -26,7 +26,13 @@ print(location_mean_age)
 
 
 # Paste barplot code:
-
+plt.close()
+sns.barplot(
+    data=new_df,
+    x= "location",
+    y= "age"
+)
+plt.show()
 
 # Paste violinplot code:
 
