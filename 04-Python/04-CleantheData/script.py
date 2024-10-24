@@ -1,4 +1,4 @@
-import seaborn
+import codecademylib3_seaborn
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -12,31 +12,16 @@ new_df = pd.merge(user_data, pop_data)
 new_df.loc[new_df.population_proper < 100000, "location"] = "rural"
 new_df.loc[new_df.population_proper >= 100000, "location"] = "urban"
 
-# Paste histogram code:
-age = new_df["age"]
-sns.displot(age)
+# Paste code for scatter plot:
+x = new_df["population_proper"]
+y = new_df["age"]
 
-plt.show() 
+plt.scatter(x, y, alpha=0.5)
+sns.regplot(x="population_proper", y="age", data=new_df)
 
-
-# Paste mean age location code:
-location_mean_age = new_df.groupby("location").age.mean() 
-
-print(location_mean_age)
+# Paste code for linear regression:
 
 
-# Paste barplot code:
-plt.close()
-sns.barplot(
-    data=new_df,
-    x= "location",
-    y= "age"
-)
+# Show plot
 plt.show()
 
-# Paste violinplot code:
-
-plt.close()
-sns.violinplot(x="location", y="age", data=new_df)
-
-plt.show()
