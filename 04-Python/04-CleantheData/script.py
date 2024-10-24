@@ -36,3 +36,7 @@ plt.show()
 
 # Paste violinplot code:
 
+plt.close()
+sns.violinplot(x="location", y="age", data=new_df)
+
+plt.show()
