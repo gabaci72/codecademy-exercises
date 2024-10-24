@@ -20,6 +20,9 @@ plt.show()
 
 
 # Paste mean age location code:
+location_mean_age = new_df.groupby("location").age.mean() 
+
+print(location_mean_age)
 
 
 # Paste barplot code:
