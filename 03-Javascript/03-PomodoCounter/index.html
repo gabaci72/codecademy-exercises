@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startTimer()">Başlat</button>
+<button onclick="stopTimer()">Durdur</button>
+<div id="timer"></div>
+
+<script>
+  let timer;
+  let workTime = 25 * 60; // 25 dakika
+  let breakTime = 5 * 60; // 5 dakika
+  let isWorking = true;
+
+  function startTimer() {
+    timer = setInterval(() => {
+      if (isWorking) {
+        workTime--;
+      } else {
+        breakTime--;
+      }
+
+      document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
+
+      if (workTime === 0) {
+        isWorking = false;
+        workTime = 25 * 60;
+        alert("Mola zamanı!");
+      } else if (breakTime === 0) {
+        isWorking = true;
+        breakTime = 5 * 60;
+        alert("Çalışma zamanı!");
+      }
+    }, 1000);
+  }
+
+  function stopTimer() {
+    clearInterval(timer);
+  }
+
+  function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secondsRemaining = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
+  }
+</script>
+</body>
+</html>
