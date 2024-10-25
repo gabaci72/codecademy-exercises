@@ -7,46 +7,104 @@
 </head>
 <body>
     <button onclick="startTimer()">Başlat</button>
-<button onclick="stopTimer()">Durdur</button>
-<div id="timer"></div>
+    <button onclick="stopTimer()">Durdur</button>
+    <button onclick="resetTimer()">Sıfırla</button>
+    <button onclick="pauseTimer()">5 Dakika Pause</button>
+    <button onclick="longPauseTimer()">15 Dakika Pause</button>
+    <div id="timer"></div>
+    
+    <script>
+        // ... diğer kodlar
 
-<script>
-  let timer;
-  let workTime = 25 * 60; // 25 dakika
-  let breakTime = 5 * 60; // 5 dakika
-  let isWorking = true;
+function startTimer() {
+  // ... diğer kodlar
 
-  function startTimer() {
-    timer = setInterval(() => {
-      if (isWorking) {
-        workTime--;
-      } else {
-        breakTime--;
+  // Ders adını al ve CSV dosyasına ekle
+  const dersAdi = document.getElementById("dersAdi").value;
+  const tarih = new Date().toLocaleDateString();
+  const zaman = new Date().toLocaleTimeString();
+
+  const csvContent = `${tarih},${zaman},${dersAdi}\n`;
+
+  const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
+  if (navigator.msSaveBlob) { // IE 10+
+    navigator.msSaveBlob(file, 'calisma_kayitlari.csv');
+  } else {
+    const a = document.createElement('a');
+    const url = URL.createObjectURL(file);
+    a.href = url;
+    a.download = 'calisma_kayitlari.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+}
+      let timer;
+      let workTime = 25 * 60; // 25 dakika
+      let breakTime = 5 * 60; // 5 dakika
+      let longBreakTime = 15 * 60; // 15 dakika
+      let isWorking = true;
+      let isPaused = false;
+    
+      function startTimer() {
+        if (!isPaused) {
+          timer = setInterval(() => {
+            if (isWorking) {
+              workTime--;
+            } else {
+              breakTime--;
+            }
+    
+            document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
+    
+            if (workTime === 0) {
+              isWorking = false;
+              workTime = 25 * 60;
+              alert("Mola zamanı!");
+            } else if (breakTime === 0) {
+              isWorking = true;
+              breakTime = 5 * 60;
+              alert("Çalışma zamanı!");
+            }
+          }, 1000);
+        }
       }
-
-      document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
-
-      if (workTime === 0) {
-        isWorking = false;
+    
+      function stopTimer() {
+        clearInterval(timer);
+        isPaused = false;
+      }
+    
+      function resetTimer() {
+        clearInterval(timer);
         workTime = 25 * 60;
-        alert("Mola zamanı!");
-      } else if (breakTime === 0) {
-        isWorking = true;
         breakTime = 5 * 60;
-        alert("Çalışma zamanı!");
+        isWorking = true;
+        isPaused = false;
+        document.getElementById("timer").textContent = formatTime(workTime);
       }
-    }, 1000);
-  }
-
-  function stopTimer() {
-    clearInterval(timer);
-  }
-
-  function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const secondsRemaining = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
-  }
-</script>
+    
+      function pauseTimer() {
+        clearInterval(timer);
+        isPaused = true;
+      }
+    
+      function longPauseTimer() {
+        clearInterval(timer);
+        breakTime = longBreakTime;
+        isWorking = false;
+        isPaused = false;
+        alert("15 dakikalık uzun mola!");
+      }
+    
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secondsRemaining = seconds % 60;
+        return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
+      }
+      
+    </script>
+    <input type="text" id="dersAdi" placeholder="Çalıştığın dersi gir">
 </body>
 </html>
