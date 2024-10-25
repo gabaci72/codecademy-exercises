@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MyPomodoSeria Timer</title>
 </head>
 <body>
-  <button onclick="startTimer()">Başlat</button>
-  <button onclick="stopTimer()">Durdur</button>
-  <button onclick="resetTimer()">Sıfırla</button>
-  <button onclick="pauseTimer()">5 Dakika Pause</button>
-  <button onclick="longPauseTimer()">15 Dakika Pause</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+  <button onclick="resetTimer()">Reset</button>
+  <button onclick="pauseTimer()">Short Break</button>
+  <button onclick="longPauseTimer()">Long Break</button>
   <div id="timer"></div>
 
-  <input type="text" id="dersAdi" placeholder="Çalıştığın dersi gir">
-  <button onclick="setDersAdi()">Ders Adını Güncelle</button>
+  <input type="text" id="WorkName" placeholder="Work Name">
 
   <script>
     let timer;
-    let workTime = 25 * 60; // 25 dakika
-    let breakTime = 5 * 60; // 5 dakika
-    let longBreakTime = 15 * 60; // 15 dakika
+    let workTime = 25 * 60; // 25 minute
+    let breakTime = 5 * 60; // 5 minute
+    let longBreakTime = 15 * 60; // 15 minute
     let isWorking = true;
     let isPaused = false;
-    let dersAdi = ""; // Ders adını global olarak tuttuk
-    
-    // Yerel depolama için anahtar
-    const STORAGE_KEY = 'calisma_kayitlari';
-    
+
     function startTimer() {
       if (!isPaused) {
         timer = setInterval(() => {
@@ -36,56 +31,37 @@
           } else {
             breakTime--;
           }
-          // Yerel depodan verileri al
-
-            // Yeni satır ekle
-  const tarih = new Date().toLocaleDateString();
-  const zaman = new Date().toLocaleTimeString();
-  csvData += `${tarih},${zaman},${dersAdi}\n`;
-
-  // Verileri depoya kaydet
-  localStorage.setItem(STORAGE_KEY, csvData);
-
-  // Dosyayı indirme seçeneği (örneğin bir butonla tetiklenebilir)
-  downloadCSV();
-}
-
-function downloadCSV() {
-  // ... dosya indirme işlemleri (önceki kodunuzdaki gibi)
-}
-
-          let csvData = localStorage.getItem(STORAGE_KEY) || "";
 
           document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
 
           if (workTime === 0) {
             isWorking = false;
             workTime = 25 * 60;
-            alert("Mola zamanı!");
+            alert("Break time!");
           } else if (breakTime === 0) {
             isWorking = true;
             breakTime = 5 * 60;
-            alert("Çalışma zamanı!");
+            alert("Get back to work!");
           }
         }, 1000);
       }
 
       // Get lesson name
-      dersAdi = document.getElementById("dersAdi").value;
+      const WorkName = document.getElementById("WorkName").value;
 
       // Create CSV content
       const tarih = new Date().toLocaleDateString();
       const zaman = new Date().toLocaleTimeString();
-      const csvContent = `${tarih},${zaman},${dersAdi}\n`;
+      const csvContent = `${tarih},${zaman},${WorkName}\n`;
 
       const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
       if (navigator.msSaveBlob) { // IE 10+
-        navigator.msSaveBlob(file, 'calisma_kayitlari.csv');
+        navigator.msSaveBlob(file, 'cwork_record.csv');
       } else {
         const a = document.createElement('a');
         const url = URL.createObjectURL(file);
         a.href = url;
-        a.download = 'calisma_kayitlari.csv';
+        a.download = 'cwork_record.csv';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -116,10 +92,6 @@ function downloadCSV() {
       const minutes = Math.floor(seconds / 60);
       const secondsRemaining = seconds % 60;
       return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
-    }
-
-    function setDersAdi() {
-      dersAdi = document.getElementById("dersAdi").value;
     }
   </script>
 </body>
