@@ -3,70 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyPomodoSeria Timer</title>
+  <title>MyPomodoroSeria Timer</title>
 </head>
 <body>
   <button onclick="startTimer()">Start</button>
-  <button onclick="stopTimer()">Stop</button>
-  <button onclick="resetTimer()">Reset</button>
-  <button onclick="pauseTimer()">Short Break</button>
-  <button onclick="longPauseTimer()">Long Break</button>
+<button onclick="stopTimer()">Stop</button>
+<button onclick="resetTimer()">Reset</button>
+<button onclick="shortPauseTimer()">Short Break</button>
+<button onclick="longPauseTimer()">Long Break</button>
   <div id="timer"></div>
 
   <input type="text" id="WorkName" placeholder="Work Name">
 
   <script>
     let timer;
-    let workTime = 25 * 60; // 25 minute
-    let breakTime = 5 * 60; // 5 minute
-    let longBreakTime = 15 * 60; // 15 minute
+    let workTime = 25 * 60; // 25 minutes
+    let breakTime = 5 * 60; // 5 minutes
+    let longBreakTime = 15 * 60; // 15 minutes
     let isWorking = true;
     let isPaused = false;
 
     function startTimer() {
-      if (!isPaused) {
-        timer = setInterval(() => {
-          if (isWorking) {
-            workTime--;
-          } else {
-            breakTime--;
-          }
+      isPaused = false; // Reset pause flag
 
-          document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
+      timer = setInterval(() => {
+        if (isWorking) {
+          workTime--;
+        } else {
+          breakTime--;
+        }
 
-          if (workTime === 0) {
-            isWorking = false;
-            workTime = 25 * 60;
-            alert("Break time!");
-          } else if (breakTime === 0) {
-            isWorking = true;
-            breakTime = 5 * 60;
-            alert("Get back to work!");
-          }
-        }, 1000);
-      }
+        document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
 
-      // Get lesson name
-      const WorkName = document.getElementById("WorkName").value;
+        if (workTime === 0) {
+          isWorking = false;
+          workTime = 25 * 60;
+          alert("Break time!");
+        } else if (breakTime === 0) {
+          isWorking = true;
+          breakTime = 5 * 60;
+          alert("Get back to work!");
+        }
+      }, 1000);
 
-      // Create CSV content
-      const tarih = new Date().toLocaleDateString();
-      const zaman = new Date().toLocaleTimeString();
-      const csvContent = `${tarih},${zaman},${WorkName}\n`;
-
-      const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
-      if (navigator.msSaveBlob) { // IE 10+
-        navigator.msSaveBlob(file, 'cwork_record.csv');
-      } else {
-        const a = document.createElement('a');
-        const url = URL.createObjectURL(file);
-        a.href = url;
-        a.download = 'cwork_record.csv';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-      }
+      // Update displayed time on start
+      document.getElementById("timer").textContent = formatTime(workTime);
     }
 
     function stopTimer() {
@@ -93,6 +74,41 @@
       const secondsRemaining = seconds % 60;
       return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
     }
+    // ... diğer kodların
+
+function shortPauseTimer() {
+  clearInterval(timer);
+  isWorking = false;
+  isPaused = false; // Mola sırasında da durdurulabilmesi için
+  breakTime = 5 * 60;
+  timer = setInterval(() => {
+    // ... mola süresini azaltan ve bitiş uyarısı veren kısım
+    breakTime--;
+    document.getElementById("timer").textContent = formatTime(breakTime);
+    if (breakTime === 0) {
+      isWorking = true;
+      breakTime = 5 * 60; // Sıradaki mola için hazırlan
+      alert("Çalışma zamanı!");
+    }
+  }, 1000);
+}
+
+function longPauseTimer() {
+  clearInterval(timer);
+  isWorking = false;
+  isPaused = false; // Mola sırasında da durdurulabilmesi için
+  breakTime = 15 * 60;
+  timer = setInterval(() => {
+    // ... mola süresini azaltan ve bitiş uyarısı veren kısım
+    breakTime--;
+    document.getElementById("timer").textContent = formatTime(breakTime);
+    if (breakTime === 0) {
+      isWorking = true;
+      breakTime = 5 * 60; // Sıradaki mola için hazırlan
+      alert("Çalışma zamanı!");
+    }
+  }, 1000);
+}
   </script>
 </body>
 </html>
