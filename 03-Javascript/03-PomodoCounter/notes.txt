@@ -1,30 +1,20 @@
-let timer;
-let workTime = 25 * 60; // 25 dakika
-let breakTime = 5 * 60; // 5 dakika
-let longBreakTime = 15 * 60; // 15 dakika
-let isWorking = true;
-let isPaused = false;
-let dersAdi = ""; // Ders adını global olarak tuttuk
 
-function startTimer() {
-  // ... diğer kodlar
-
-  // CSV dosyasına yeni satır ekle
-  fetch('calisma_kayitlari.csv')
+  // CSV file add to new record
+  fetch('workTimeRecord.csv')
     .then(response => response.text())
     .then(data => {
-      const csvContent = data + `${tarih},${zaman},${dersAdi}\n`;
+      const csvContent = data + `${tarih},${zaman},${WorkName}\n`;
       const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
-      // ... dosya indirme işlemleri
+      // ... file download operations
     })
     .catch(error => {
-      console.error('Hata oluştu:', error);
-      // İlk defa oluşturuluyorsa dosyayı oluştur
-      const file = new Blob([`${tarih},${zaman},${dersAdi}\n`], {type: 'text/csv;charset=utf-8;'});
-      // ... dosya indirme işlemleri
+      console.error('An error occurred:', error);
+      // Create the file if creating it for the first time
+      const file = new Blob([`${tarih},${zaman},${WorkName}\n`], {type: 'text/csv;charset=utf-8;'});
+      // ... file download operations
     });
 }
 
-function setDersAdi() {
-  dersAdi = document.getElementById("dersAdi").value;
+function setWorkName() {
+  WorkName = document.getElementById("WorkName").value;
 }
