@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <button onclick="startTimer()">Başlat</button>
-    <button onclick="stopTimer()">Durdur</button>
-    <button onclick="resetTimer()">Sıfırla</button>
-    <button onclick="pauseTimer()">5 Dakika Pause</button>
-    <button onclick="longPauseTimer()">15 Dakika Pause</button>
-    <div id="timer"></div>
+  <button onclick="startTimer()">Başlat</button>
+  <button onclick="stopTimer()">Durdur</button>
+  <button onclick="resetTimer()">Sıfırla</button>
+  <button onclick="pauseTimer()">5 Dakika Pause</button>
+  <button onclick="longPauseTimer()">15 Dakika Pause</button>
+  <div id="timer"></div>
+
+  <input type="text" id="dersAdi" placeholder="Çalıştığın dersi gir">
+  <button onclick="setDersAdi()">Ders Adını Güncelle</button>
+
+  <script>
+    let timer;
+    let workTime = 25 * 60; // 25 dakika
+    let breakTime = 5 * 60; // 5 dakika
+    let longBreakTime = 15 * 60; // 15 dakika
+    let isWorking = true;
+    let isPaused = false;
+    let dersAdi = ""; // Ders adını global olarak tuttuk
     
-    <script>
-        // ... diğer kodlar
+    // Yerel depolama için anahtar
+    const STORAGE_KEY = 'calisma_kayitlari';
+    
+    function startTimer() {
+      if (!isPaused) {
+        timer = setInterval(() => {
+          if (isWorking) {
+            workTime--;
+          } else {
+            breakTime--;
+          }
+          // Yerel depodan verileri al
 
-function startTimer() {
-  // ... diğer kodlar
-
-  // Ders adını al ve CSV dosyasına ekle
-  const dersAdi = document.getElementById("dersAdi").value;
+            // Yeni satır ekle
   const tarih = new Date().toLocaleDateString();
   const zaman = new Date().toLocaleTimeString();
+  csvData += `${tarih},${zaman},${dersAdi}\n`;
 
-  const csvContent = `${tarih},${zaman},${dersAdi}\n`;
+  // Verileri depoya kaydet
+  localStorage.setItem(STORAGE_KEY, csvData);
 
-  const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
-  if (navigator.msSaveBlob) { // IE 10+
-    navigator.msSaveBlob(file, 'calisma_kayitlari.csv');
-  } else {
-    const a = document.createElement('a');
-    const url = URL.createObjectURL(file);
-    a.href = url;
-    a.download = 'calisma_kayitlari.csv';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
+  // Dosyayı indirme seçeneği (örneğin bir butonla tetiklenebilir)
+  downloadCSV();
 }
-      let timer;
-      let workTime = 25 * 60; // 25 dakika
-      let breakTime = 5 * 60; // 5 dakika
-      let longBreakTime = 15 * 60; // 15 dakika
-      let isWorking = true;
-      let isPaused = false;
-    
-      function startTimer() {
-        if (!isPaused) {
-          timer = setInterval(() => {
-            if (isWorking) {
-              workTime--;
-            } else {
-              breakTime--;
-            }
-    
-            document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
-    
-            if (workTime === 0) {
-              isWorking = false;
-              workTime = 25 * 60;
-              alert("Mola zamanı!");
-            } else if (breakTime === 0) {
-              isWorking = true;
-              breakTime = 5 * 60;
-              alert("Çalışma zamanı!");
-            }
-          }, 1000);
-        }
+
+function downloadCSV() {
+  // ... dosya indirme işlemleri (önceki kodunuzdaki gibi)
+}
+
+          let csvData = localStorage.getItem(STORAGE_KEY) || "";
+
+          document.getElementById("timer").textContent = formatTime(isWorking ? workTime : breakTime);
+
+          if (workTime === 0) {
+            isWorking = false;
+            workTime = 25 * 60;
+            alert("Mola zamanı!");
+          } else if (breakTime === 0) {
+            isWorking = true;
+            breakTime = 5 * 60;
+            alert("Çalışma zamanı!");
+          }
+        }, 1000);
       }
-    
-      function stopTimer() {
-        clearInterval(timer);
-        isPaused = false;
+
+      // Get lesson name
+      dersAdi = document.getElementById("dersAdi").value;
+
+      // Create CSV content
+      const tarih = new Date().toLocaleDateString();
+      const zaman = new Date().toLocaleTimeString();
+      const csvContent = `${tarih},${zaman},${dersAdi}\n`;
+
+      const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
+      if (navigator.msSaveBlob) { // IE 10+
+        navigator.msSaveBlob(file, 'calisma_kayitlari.csv');
+      } else {
+        const a = document.createElement('a');
+        const url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = 'calisma_kayitlari.csv';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
       }
-    
-      function resetTimer() {
-        clearInterval(timer);
-        workTime = 25 * 60;
-        breakTime = 5 * 60;
-        isWorking = true;
-        isPaused = false;
-        document.getElementById("timer").textContent = formatTime(workTime);
-      }
-    
-      function pauseTimer() {
-        clearInterval(timer);
-        isPaused = true;
-      }
-    
-      function longPauseTimer() {
-        clearInterval(timer);
-        breakTime = longBreakTime;
-        isWorking = false;
-        isPaused = false;
-        alert("15 dakikalık uzun mola!");
-      }
-    
-      function formatTime(seconds) {
-        const minutes = Math.floor(seconds / 60);
-        const secondsRemaining = seconds % 60;
-        return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
-      }
-      
-    </script>
-    <input type="text" id="dersAdi" placeholder="Çalıştığın dersi gir">
+    }
+
+    function stopTimer() {
+      clearInterval(timer);
+      isPaused = false;
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      workTime = 25 * 60;
+      breakTime = 5 * 60;
+      isWorking = true;
+      isPaused = false;
+      document.getElementById("timer").textContent = formatTime(workTime);
+    }
+
+    function pauseTimer() {
+      clearInterval(timer);
+      isPaused = true;
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const secondsRemaining = seconds % 60;
+      return `${minutes.toString().padStart(2, '0')}:${secondsRemaining.toString().padStart(2, '0')}`;
+    }
+
+    function setDersAdi() {
+      dersAdi = document.getElementById("dersAdi").value;
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+let timer;
+let workTime = 25 * 60; // 25 dakika
+let breakTime = 5 * 60; // 5 dakika
+let longBreakTime = 15 * 60; // 15 dakika
+let isWorking = true;
+let isPaused = false;
+let dersAdi = ""; // Ders adını global olarak tuttuk
+
+function startTimer() {
+  // ... diğer kodlar
+
+  // CSV dosyasına yeni satır ekle
+  fetch('calisma_kayitlari.csv')
+    .then(response => response.text())
+    .then(data => {
+      const csvContent = data + `${tarih},${zaman},${dersAdi}\n`;
+      const file = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
+      // ... dosya indirme işlemleri
+    })
+    .catch(error => {
+      console.error('Hata oluştu:', error);
+      // İlk defa oluşturuluyorsa dosyayı oluştur
+      const file = new Blob([`${tarih},${zaman},${dersAdi}\n`], {type: 'text/csv;charset=utf-8;'});
+      // ... dosya indirme işlemleri
+    });
+}
+
+function setDersAdi() {
+  dersAdi = document.getElementById("dersAdi").value;
+}
