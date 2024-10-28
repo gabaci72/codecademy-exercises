@@ -12,8 +12,9 @@ nav {
   }
   
   ul {
-    float: left;
+    float: right;
   }
+  
   
   li {
     display: inline-block;
