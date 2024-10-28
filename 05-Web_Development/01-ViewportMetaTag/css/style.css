@@ -115,7 +115,7 @@ nav a {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), (orientation: portrait) {
   .page-title {
     width: 270px;
   }
@@ -138,6 +138,15 @@ nav a {
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
-  /* Add styles here to make the logo and text appear vertical */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, 
+  .page-description {
+    float: left;
+    width: 20em;
+  }
+
+  .page-description {
+      text-align: left;
+  }
 }
