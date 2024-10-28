@@ -120,7 +120,9 @@ footer .container {
 }
 
 @media only screen and (max-width: 470px) {
-  /* Add styles here to adjust elements for very small screens */
+  .rating h1 {
+    font-size: 2rem;
+  }
 }
 
 
