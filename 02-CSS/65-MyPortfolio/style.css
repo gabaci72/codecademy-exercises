@@ -15,7 +15,6 @@ nav {
     float: right;
   }
   
-  
   li {
     display: inline-block;
     margin-right: 25px;
@@ -30,7 +29,9 @@ nav {
     text-decoration: none;
     font-size: 24px;
     color: white;
+    text-shadow: 2px 2px 0 #bbbbbb;
   }
+  
   
   .clearfix:after {
      content: " ";
@@ -44,7 +45,7 @@ nav {
     h1 {
       display: none;
     }
-    
+  
     li {
       margin-right: 10px;
     }
@@ -55,4 +56,3 @@ nav {
       font-size: 16px;
     }
   }
-  
