@@ -20,6 +20,7 @@ nav {
     margin-right: 25px;
     text-align: center;
     background-color: #28587B;  
+    border-radius: 5px;
   }
   
   a {
@@ -31,7 +32,6 @@ nav {
     color: white;
     text-shadow: 2px 2px 0 #bbbbbb;
   }
-  
   
   .clearfix:after {
      content: " ";
