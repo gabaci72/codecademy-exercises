@@ -118,11 +118,16 @@ footer .container {
     display: none;
   }
 }
-
 @media only screen and (max-width: 470px) {
   .rating h1 {
     font-size: 2rem;
   }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+  }
+}
 }
 
 
