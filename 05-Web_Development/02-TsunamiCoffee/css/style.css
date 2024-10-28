@@ -109,6 +109,8 @@ footer .container {
   color: white;
 }
 @media only screen and (max-width: 960px) {
-  /* Add styles here to adjust elements for smaller screens */
+  .main {
+    padding-top: 0;
+  }
 }
 
