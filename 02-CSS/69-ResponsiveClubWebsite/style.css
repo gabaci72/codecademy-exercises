@@ -30,10 +30,12 @@ body {
     background-image: url('./img/logo.jpg');
     background-position: center;
     background-repeat: none;
+    max-width: 100%;
+    
   }
   
   .logo h1 {
-    color: Coral;
+    color: rgb(74, 227, 28);
     font-size: 2rem;
     margin-top: 10rem;
     padding: 2rem;
@@ -65,7 +67,7 @@ body {
   }
   
   .catchword p {
-    color: White;
+    color: rgb(0, 0, 0);
   }
   
   .testimonial {
@@ -73,21 +75,22 @@ body {
     height: 20rem;
     padding: 0 1rem;
     padding-top: 1rem;
-    color: yellow;
+    color: black;
   }
   
   .testimonial h1 {
     font-size: 2.5rem;
-    color: yellow;
+    color: black;
   }
   
   .catchword h2 {
-    color: yellow;
+    color: black;
   }
   
   .photos img {
     width: 30%;
     margin: 1.5%;
+    max-width: 100%;
   }
   
   .meetup {
@@ -102,7 +105,7 @@ body {
   }
   
   .meetup h1 {
-    color: yellow;
+    color: black;
     text-align: center;
   }
   
@@ -112,6 +115,7 @@ body {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      max-width: 100%;
     }
   }
   
@@ -145,6 +149,7 @@ body {
   
     .photos img {
       width: 100%;
+      max-width: 100%;
     }
   }
   
