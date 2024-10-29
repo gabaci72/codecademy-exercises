@@ -1,8 +1,10 @@
 /* style.css */
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
+    background-color: bisque;
 }
 
 header {
@@ -37,3 +39,46 @@ footer {
         /* Adjust main content layout for larger screens */
     }
 }
+
+@media only screen and (max-width: 1048px) {
+  
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+  
+    .intro h1 {
+      margin-top: 2rem;
+    }
+  
+    .intro {
+      max-height: 200px;
+    }
+  
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+  
+    .testimonial h1 {
+      font-size: 2rem;
+    }
+  
+    .photos img {
+      width: 100%;
+    }
+  }
+  

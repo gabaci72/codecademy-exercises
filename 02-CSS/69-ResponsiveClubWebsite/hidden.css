@@ -18,7 +18,7 @@ body {
   .intro {
     height: 30rem;
     padding-top: 1rem;
-    background-image: url('https://content.codecademy.com/PRO/independent-practice-projects/responsive-meetup-page/img/runner-splash.jpg');
+    background-image: url('./img/intro.jpg');
     background-position: center;
     background-repeat: none;
   }
@@ -51,18 +51,18 @@ body {
     display: inline-block;
   }
   
-  .summary,
+  .catchword,
   .testimonial,
   .photos,
   .meetup {
     margin: 4em auto;
   }
   
-  .summary {
+  .catchword {
     padding: 0 1rem;
   }
   
-  .summary p {
+  .catchword p {
     color: White;
   }
   
@@ -79,7 +79,7 @@ body {
     color: yellow;
   }
   
-  .summary h2 {
+  .catchword h2 {
     color: yellow;
   }
   
