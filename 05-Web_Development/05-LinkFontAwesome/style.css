@@ -1,0 +1,122 @@
+/* Universal Styles */
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  /* Header */
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+  
+  nav {
+    border-bottom: 1px solid #466995;
+    background-color: #466995;
+  }
+  
+  nav ul {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #DBE9EE;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    padding: 40px;
+    text-align: center;
+    height: 150px;
+  }
+  
+  .welcome h1 {
+    color: #466995;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  
+  .welcome h3 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .fa-question-circle {
+    margin: 5px;
+  }
+  
+  /* Social */
+  .social {
+    position: relative;
+    text-align: center;
+    top: 150px;
+  }
+  
+  .social i {
+    margin: 5px;
+  }
+  
+  /* Questions */
+  
+  .questions {
+    position: relative;
+    top: 240px;
+  }
+  
+  .question {
+    margin: 120px auto;
+    text-align: center;
+  }
+  
+  .question h4 {
+    color: #466995;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  
+  .prompt {
+    display: block;
+    margin-bottom: 40px;
+    color: #333333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+  }
+  
+  .answer {
+    display: inline-block;
+    width: 220px;
+    padding: 57px 0;
+    border: 1px solid #466995;
+    margin: 20px;
+    color: #466995;
+    font-weight: 700;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: white;
+  }
