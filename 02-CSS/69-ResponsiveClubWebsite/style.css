@@ -1,0 +1,39 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Header styles */
+}
+
+main {
+    /* Main content styles */
+}
+
+footer {
+    /* Footer styles */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Mobile-first approach: Styles for smaller screens */
+    header {
+        /* Adjust header layout for smaller screens */
+    }
+    main {
+        /* Adjust main content layout for smaller screens */
+    }
+}
+
+@media (min-width: 992px) {
+    /* Desktop-specific styles */
+    header {
+        /* Adjust header layout for larger screens */
+    }
+    main {
+        /* Adjust main content layout for larger screens */
+    }
+}
