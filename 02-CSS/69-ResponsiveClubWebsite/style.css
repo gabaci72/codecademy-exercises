@@ -7,40 +7,106 @@ body {
     background-color: bisque;
 }
 
-header {
-    /* Header styles */
+.bar {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+   
 }
+.bar p {
+    left: 25rem;
+  }
+  .logo {
+    height: 30rem;
+    padding-top: 1rem;
+    
+  }
+  
+  .logo img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    background-image: url('./img/logo.jpg');
+    background-position: center;
+    background-repeat: none;
+  }
+  
+  .logo h1 {
+    color: Coral;
+    font-size: 2rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    text-align: center;
+  }
 
-main {
-    /* Main content styles */
-}
-
-footer {
-    /* Footer styles */
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    /* Mobile-first approach: Styles for smaller screens */
-    header {
-        /* Adjust header layout for smaller screens */
-    }
-    main {
-        /* Adjust main content layout for smaller screens */
-    }
-}
-
-@media (min-width: 992px) {
-    /* Desktop-specific styles */
-    header {
-        /* Adjust header layout for larger screens */
-    }
-    main {
-        /* Adjust main content layout for larger screens */
-    }
-}
-
-@media only screen and (max-width: 1048px) {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  li {
+    color: lightsalmon;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+  
+  .catchword,
+  .testimonial,
+  .photos,
+  .meetup {
+    margin: 4em auto;
+  }
+  
+  .catchword {
+    padding: 0 1rem;
+  }
+  
+  .catchword p {
+    color: White;
+  }
+  
+  .testimonial {
+    background-color: teal;
+    height: 20rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    color: yellow;
+  }
+  
+  .testimonial h1 {
+    font-size: 2.5rem;
+    color: yellow;
+  }
+  
+  .catchword h2 {
+    color: yellow;
+  }
+  
+  .photos img {
+    width: 30%;
+    margin: 1.5%;
+  }
+  
+  .meetup {
+    margin-bottom: 2rem;
+  }
+  
+  .meetup img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .meetup h1 {
+    color: yellow;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1048px) {
   
     .photos img {
       width: 100%;
@@ -51,11 +117,11 @@ footer {
   
   @media only screen and (max-width: 640px) {
   
-    .intro h1 {
+    .logo h1 {
       margin-top: 2rem;
     }
   
-    .intro {
+    .logo {
       max-height: 200px;
     }
   
