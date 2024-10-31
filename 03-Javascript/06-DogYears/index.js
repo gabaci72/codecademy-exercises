@@ -9,3 +9,6 @@ earlyYears *= 10.5;
 
 // Calculate the later years by subtracting the first two years from my age
 let laterYears = myAge - 2;
+
+// Multiply the later years by 4 to convert to dog years
+laterYears *= 4;
