@@ -21,4 +21,8 @@ console.log(laterYears);
 const myAgeInDogYears = earlyYears + laterYears;
 
 // Store my name in lowercase letters
-const myName = 'Your Name'.toLowerCase(); // Replace 'Your Name' with your actual name
+const myName = 'Seriano'.toLowerCase(); // Replace 'Your Name' with your actual name
+
+
+// Log my name and age in dog years using string interpolation
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
