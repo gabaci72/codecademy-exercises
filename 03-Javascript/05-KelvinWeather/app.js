@@ -1,5 +1,5 @@
 /* Declare a constant variable for today's temperature in Kelvin */
-const kelvin = 293;
+const kelvin = 0;
 
 /* Let’s convert Kelvin to Celsius by subtracting 273 from the kelvin variable. Store the result in another variable, named celsius.*/
 const celsius = kelvin - 273;
@@ -17,6 +17,18 @@ fahrenheit = Math.floor(fahrenheit);
 
 /*Use console.log and string interpolation to log the temperature in fahrenheit to the console */
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+/*Convert celsius to the Newton scale using the equation below
+Newton = Celsius * (33/100)
+
+Round down the Newton temperature using the .floor() method
+Use console.log and string interpolation to log the temperature in newton to the console */ 
+let newton = celsius * (33 / 100);
+newton = Math.floor(newton);
+console.log(`The temperature is ${newton} degrees Newton.`);
+
+
+
 
 
 
