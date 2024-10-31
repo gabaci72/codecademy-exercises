@@ -12,3 +12,10 @@ let laterYears = myAge - 2;
 
 // Multiply the later years by 4 to convert to dog years
 laterYears *= 4;
+
+/*o check your work, print earlyYears and laterYears to the console using console.log().  */
+console.log(earlyYears);
+console.log(laterYears);
+
+
+
