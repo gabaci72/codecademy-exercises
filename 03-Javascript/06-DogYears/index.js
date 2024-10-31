@@ -20,7 +20,5 @@ console.log(laterYears);
 // Calculate my age in dog years by adding early and later years
 const myAgeInDogYears = earlyYears + laterYears;
 
-
-
-
-
+// Store my name in lowercase letters
+const myName = 'Your Name'.toLowerCase(); // Replace 'Your Name' with your actual name
