@@ -6,3 +6,6 @@ let earlyYears = 2;
 
 /*Use the multiplication assignment operator to multiply the value saved to earlyYears by 10.5 and reassign it to earlyYears*/
 earlyYears *= 10.5;
+
+// Calculate the later years by subtracting the first two years from my age
+let laterYears = myAge - 2;
