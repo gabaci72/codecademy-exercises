@@ -6,3 +6,4 @@ if (true) {
   if (false) {
     console.log('This message will not print!');
   }
+  // This message will not print!
