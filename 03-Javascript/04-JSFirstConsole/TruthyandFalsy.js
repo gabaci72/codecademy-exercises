@@ -1,4 +1,4 @@
-let wordCount = 0;
+let wordCount = 1;
 
 if (wordCount) {
   console.log("Great! You've started your work!");
@@ -7,7 +7,7 @@ if (wordCount) {
 }
 
 
-let favoritePhrase = 'Hello World!';
+let favoritePhrase = '';
 
 if (favoritePhrase) {
   console.log("This string doesn't seem to be empty.");
