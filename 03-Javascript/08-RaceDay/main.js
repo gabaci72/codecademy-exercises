@@ -9,3 +9,8 @@ if (age > 18 && registeredEarly) {
   raceNumber += 1000;
 }
 //This code checks if the runner is over 18 and registered early. If both conditions are met, it adds 1000 to their raceNumber.
+
+if (age > 18 && registeredEarly) {
+  console.log(`You will race at 9:30 am. Your race number is ${raceNumber}.`);
+}
+//This code checks if the runner is over 18 and registered early.
