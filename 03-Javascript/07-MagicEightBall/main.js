@@ -51,4 +51,5 @@ switch (randomNumber) {
 
 //This switch statement checks the value of randomNumber and assigns the corresponding Magic Eight Ball phrase to eightBall
 
+console.log(eightBall); //Use the console.log() method to print the Magic Eight Ball’s response.
 
