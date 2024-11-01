@@ -1,0 +1,1 @@
+let athleteFinalPosition = 'first place';
