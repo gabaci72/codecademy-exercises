@@ -20,7 +20,7 @@ let randomNumber = Math.floor(Math.random() * 8);
 
 let eightBall = ''; //Create one more variable named eightBall, and set it equal to an empty string
 
-switch (randomNumber) {
+/*switch (randomNumber) {
   case 0:
     eightBall = 'It is certain';
     break;
@@ -47,9 +47,30 @@ switch (randomNumber) {
     break;
   default:
     eightBall = 'Error';
-}
+}*/
 
 //This switch statement checks the value of randomNumber and assigns the corresponding Magic Eight Ball phrase to eightBall
+
+if (randomNumber === 0) {
+    eightBall = 'It is certain';
+  } else if (randomNumber === 1) {
+    eightBall = 'It is decidedly so';
+  } else if (randomNumber === 2) {
+    eightBall = 'Reply hazy try again';
+  } else if (randomNumber === 3) {
+    eightBall = 'Cannot predict now';
+  } else if (randomNumber === 4) {
+    eightBall = 'Do not count on it';
+  } else if (randomNumber === 5) {
+    eightBall = 'My sources say no';
+  } else if (randomNumber === 6) {
+    eightBall = 'Outlook not so good';
+  } else if (randomNumber === 7) {
+    eightBall = 'Signs point to yes';
+  } else {
+    eightBall = 'Error';
+  }
+  //This if/else if/else structure achieves the same result as the switch statement. Run the program multiple times to see different random results.
 
 console.log(eightBall); //Use the console.log() method to print the Magic Eight Ball’s response.
 
