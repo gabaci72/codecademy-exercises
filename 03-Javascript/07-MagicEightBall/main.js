@@ -18,6 +18,7 @@ console.log(`${userName} asked: ${userQuestion}`);
 let randomNumber = Math.floor(Math.random() * 8);
 //We need to generate a random number between 0 and 7.
 
+let eightBall = ''; //Create one more variable named eightBall, and set it equal to an empty string
 
 
 
