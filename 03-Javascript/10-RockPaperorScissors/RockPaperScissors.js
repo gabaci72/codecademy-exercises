@@ -73,3 +73,15 @@ console.log(determineWinner("paper", "paper")); // should print 'The game is a t
 console.log(determineWinner("scissors", "paper")); // should print 'You won!'
 console.log(determineWinner("scissors", "rock")); // should print 'The computer won!'
 console.log(determineWinner("scissors", "scissors")); // should print 'The game is a tie!'
+
+const playGame = () => {
+  const userChoice = getUserChoice('rock'); // You can change 'rock' to 'paper' or 'scissors'
+  const computerChoice = getComputerChoice();
+  console.log('You threw: ' + userChoice);
+  console.log('The computer threw: ' + computerChoice);
+};
+
+// Call the playGame function to start the game
+playGame();
+
+
