@@ -23,3 +23,15 @@ const getSleepHours = (day) => {
     }
   };
   
+  console.log(getSleepHours('monday'));   // should print 8
+  console.log(getSleepHours('tuesday'));  // should print 7
+  console.log(getSleepHours('wednesday'));// should print 6
+  console.log(getSleepHours('thursday')); // should print 5
+  console.log(getSleepHours('friday'));   // should print 8
+  console.log(getSleepHours('saturday')); // should print 9
+  console.log(getSleepHours('sunday'));   // should print 7
+  
+  
+  
+  
+  
