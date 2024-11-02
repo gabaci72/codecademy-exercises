@@ -1,6 +1,7 @@
 console.log('hi');
 
 const getUserChoice = userInput => {
-  // Function body will go here
+  userInput = userInput.toLowerCase();
+  // Additional logic will go here
 };
 
