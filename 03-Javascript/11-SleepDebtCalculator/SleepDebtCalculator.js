@@ -41,5 +41,9 @@ const getSleepHours = (day) => {
     getSleepHours('sunday');
   
   
+  const getIdealSleepHours = () => {
+    const idealHours = 8; // Set this to your ideal hours per night
+    return idealHours * 7;
+  };
   
   
