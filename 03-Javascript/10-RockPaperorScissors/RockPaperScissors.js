@@ -8,3 +8,7 @@ const getUserChoice = userInput => {
     console.log('Error! Invalid choice.');
   }
 };
+
+console.log(getUserChoice('Paper')); // should print 'paper'
+console.log(getUserChoice('fork')); // should print 'Error!' and `undefined`
+
