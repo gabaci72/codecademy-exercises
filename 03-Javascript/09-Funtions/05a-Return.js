@@ -1,4 +1,4 @@
 function monitorCount(rows, columns) {
-    // Function body will go here
+    return rows * columns;
   }
   
