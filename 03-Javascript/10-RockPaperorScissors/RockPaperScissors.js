@@ -23,3 +23,7 @@ const getComputerChoice = () => {
       return 'scissors';
   }
 };
+
+console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
+console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
+console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
