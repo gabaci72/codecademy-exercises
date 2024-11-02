@@ -6,3 +6,5 @@ function costOfMonitors(rows, columns) {
 }
 
 const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
