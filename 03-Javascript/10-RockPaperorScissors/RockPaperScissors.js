@@ -28,13 +28,23 @@ const getComputerChoice = () => {
   }
 };
 
-console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
-console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
-console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
+//console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
+//console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
+//console.log(getComputerChoice()); // should print 'rock', 'paper', or 'scissors'
 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
-    return "The game is a tie!";
+    return 'The game is a tie!';
   }
-  // Additional logic for determining the winner will go here
+  
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'The computer won!';
+    } else {
+      return 'You won!';
+    }
+  }
+  
+  // Additional logic for other user choices will go here
 };
+
