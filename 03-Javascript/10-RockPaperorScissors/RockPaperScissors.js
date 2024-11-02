@@ -2,6 +2,9 @@ console.log('hi');
 
 const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
-  // Additional logic will go here
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+    return userInput;
+  } else {
+    console.log('Error! Invalid choice.');
+  }
 };
-
