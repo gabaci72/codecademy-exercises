@@ -31,9 +31,15 @@ const getSleepHours = (day) => {
   console.log(getSleepHours('saturday')); // should print 9
   console.log(getSleepHours('sunday'));   // should print 7
   
-  const getActualSleepHours = () => {
+  const getActualSleepHours = () => 
+    getSleepHours('monday') +
+    getSleepHours('tuesday') +
+    getSleepHours('wednesday') +
+    getSleepHours('thursday') +
+    getSleepHours('friday') +
+    getSleepHours('saturday') +
+    getSleepHours('sunday');
   
-  };
   
   
   
