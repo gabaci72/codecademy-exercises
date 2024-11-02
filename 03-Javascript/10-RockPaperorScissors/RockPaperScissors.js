@@ -53,5 +53,11 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
   
-  // Additional logic for 'scissors' will go here
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'The computer won!';
+    } else {
+      return 'You won!';
+    }
+  }
 };
