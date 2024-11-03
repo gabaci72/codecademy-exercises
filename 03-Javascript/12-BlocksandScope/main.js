@@ -5,5 +5,5 @@ const logCitySkyline = () => {
   return `The stars over the ${skyscraper} in ${city}`;
 };
 
+console.log(logCitySkyline());
 
-logCitySkyline();
