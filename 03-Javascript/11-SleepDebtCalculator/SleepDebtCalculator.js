@@ -61,3 +61,6 @@ const calculateSleepDebt = () => {
     console.log('You should get some rest.');
   }
 };
+
+calculateSleepDebt();
+
