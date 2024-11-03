@@ -1,4 +1,9 @@
 const city = 'New York City';
+
 const logCitySkyline = () => {
-  // Function logic will go here
+  let skyscraper = 'Empire State Building';
+  return `The stars over the ${skyscraper} in ${city}`;
 };
+
+
+logCitySkyline();
