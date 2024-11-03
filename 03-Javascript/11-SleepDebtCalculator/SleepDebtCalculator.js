@@ -49,3 +49,8 @@ const getIdealSleepHours = () => {
 console.log(getActualSleepHours()); // should print the sum of all sleep hours in the week
 console.log(getIdealSleepHours());  // if idealHours is 8, should print 56
 
+const calculateSleepDebt = () => {
+  const actualSleepHours = getActualSleepHours();
+  const idealSleepHours = getIdealSleepHours();
+};
+
