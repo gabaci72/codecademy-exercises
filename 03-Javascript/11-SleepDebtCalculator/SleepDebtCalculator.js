@@ -52,5 +52,12 @@ console.log(getIdealSleepHours());  // if idealHours is 8, should print 56
 const calculateSleepDebt = () => {
   const actualSleepHours = getActualSleepHours();
   const idealSleepHours = getIdealSleepHours();
-};
 
+  if (actualSleepHours === idealSleepHours) {
+    console.log('You got the perfect amount of sleep.');
+  } else if (actualSleepHours > idealSleepHours) {
+    console.log('You got more sleep than needed.');
+  } else {
+    console.log('You should get some rest.');
+  }
+};
