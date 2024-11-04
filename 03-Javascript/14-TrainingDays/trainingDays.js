@@ -1,4 +1,4 @@
-const name = 'Nala'; // Move name to global scope
+const name = 'Nala'; // Global name variable
 
 const getRandEvent = () => {
   const random = Math.floor(Math.random() * 3); // Move random inside the function
@@ -23,16 +23,16 @@ const getTrainingDays = event => {
   return days;
 };
 
-const logEvent = (event) => {
+const logEvent = (name, event) => {
   console.log(`${name}'s event is: ${event}`);
 };
 
-const logTime = (days) => {
+const logTime = (name, days) => {
   console.log(`${name}'s time to train is: ${days} days`);
 };
 
 const event = getRandEvent();
 const days = getTrainingDays(event);
 
-logEvent(event);
-logTime(days);
+logEvent(name, event);
+logTime(name, days);
