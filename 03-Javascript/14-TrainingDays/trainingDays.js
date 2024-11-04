@@ -1,7 +1,7 @@
 const name = 'Nala'; // Global name variable
 
 const getRandEvent = () => {
-  const random = Math.floor(Math.random() * 3); // Move random inside the function
+  const random = Math.floor(Math.random() * 3); // Ensure random is inside the function
   if (random === 0) {
     return 'Marathon';
   } else if (random === 1) {
@@ -31,16 +31,17 @@ const logTime = (name, days) => {
   console.log(`${name}'s time to train is: ${days} days`);
 };
 
+// Existing code for Nala
 const event = getRandEvent();
 const days = getTrainingDays(event);
-
 logEvent(name, event);
 logTime(name, days);
 
+// Code for Warren
 const event2 = getRandEvent();
 const days2 = getTrainingDays(event2);
 const name2 = 'Warren';
-
 logEvent(name2, event2);
 logTime(name2, days2);
+
 
