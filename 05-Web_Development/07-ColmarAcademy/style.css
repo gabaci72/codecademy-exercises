@@ -1,0 +1,39 @@
+header {
+    align-items: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #999;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between; /*It leaves space between the elements in the header. With this feature, the logo is aligned to the left and the menu links are aligned to the right.*/
+    left: 0;
+    padding: 0 1.5rem;
+    position: fixed;/*It ensures that the header remains fixed throughout the page. Even if the page is scrolled, the header remains fixed at the top.*/
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  /* header #logo {
+    align-items: center;
+    display: flex;
+  } */
+  /* header img {
+    vertical-align: middle;
+    width: 2rem;
+  } */
+  /* header #logo-text {
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 500;
+  } */
+  /* header #logo-text-2 {
+    color: #999;
+    font-size: 1.25rem;
+    font-weight: 500;
+  } */
+  /* header ul.desktop, footer ul {
+    display: inline-flex;
+  } */
+  /* header ul.mobile {
+    display: none;
+  } */
+  
