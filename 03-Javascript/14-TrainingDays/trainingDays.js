@@ -1,3 +1,6 @@
+/*I declared let days; outside of the if blocks and then assigned values based on the event type. 
+#This allows to return the days variable without encountering a ReferenceError. */
+
 // The scope of `random` is too loose 
 const random = Math.floor(Math.random() * 3);
 
@@ -13,13 +16,13 @@ const getRandEvent = () => {
 
 // The scope of `days` is too tight 
 const getTrainingDays = event => {
-
+  let days; // 1.Declare days here
   if (event === 'Marathon') {
-    let days = 50;
+    days = 50; // Assign value to days
   } else if (event === 'Triathlon') {
-    let days = 100;
+    days = 100; // Assign value to days
   } else if (event === 'Pentathlon') {
-    let days = 200;
+    days = 200; // Assign value to days
   }
 
   return days;
@@ -39,7 +42,6 @@ const logTime = days => {
 const event = getRandEvent();
 const days = getTrainingDays(event);
 // Define a `name` variable. Use it as an argument after updating logEvent and logTime 
-
 
 logEvent(event);
 logTime(days);
