@@ -11,3 +11,4 @@ const callMyNightSky = () => {
 };
 
 console.log(callMyNightSky());
+console.log(stars); // Logs 'Sirius'
