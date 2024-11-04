@@ -10,34 +10,48 @@ body {
     padding: 24px;
   }
   
- /* nav block */
-nav {
+ /* style.css */
+ nav {
   height: 64px;
-  background-color: white;
+  padding: 0 24px;
   display: flex;
   align-items: center;
-  padding: 0 24px;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align elements to the left */
 }
 
 nav img {
   height: 50px;
 }
 
-nav h1 {
-  font-size: 32px;
-  margin: 0;
-}
-
-nav ul {
+.nav-text {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-nav li {
+.colmar {
+  color: black;
+  font-size: 32px;
+  margin-right: 5px;
+  font-weight: bold;
+  
+}
+
+.academy {
+  color: gray;
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
   margin-left: 16px;
+  text-decoration: none;
+  color: #333; /* Link color */
 }
   
   .hero {
