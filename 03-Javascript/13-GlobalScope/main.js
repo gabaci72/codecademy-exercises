@@ -6,3 +6,6 @@ const galaxy = 'The Milky Way';
 //Name the third variable stars and set it equal to 'North Star'.
 const stars = 'North Star';
 
+const callMyNightSky = () => {
+  return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+};
