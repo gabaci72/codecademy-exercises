@@ -59,11 +59,18 @@ nav img {
   text-decoration: none;
   color: #333; /* Link color */
 }
-  
+
   .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e0e0e0;
     text-align: center;
     padding: 100px;
+  }
+  .hero img {
+    max-width: 50%;
+    height: auto;
   }
   
   .features {
