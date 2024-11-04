@@ -6,7 +6,7 @@ const galaxy = 'The Milky Way';
 let stars = 'North Star';
 
 const callMyNightSky = () => {
-  
+  stars = 'Sirius'; // 1.Overwriting the global variable
 	return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
 };
 
