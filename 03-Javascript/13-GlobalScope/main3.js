@@ -1,14 +1,12 @@
-// Scope Pollution
-//When you declare global variables, they go to the global namespace
-//Scope pollution is when we have too many global variables that exist in the global namespace, or when we reuse variables across different scopes.
-const satellite = 'The Moon';
-const galaxy = 'The Milky Way';
-let stars = 'North Star';
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+  let region = 'The Arctic';
+//create an if statement that checks if the region is the 'The Arctic'.
+  if (region === 'The Arctic') {
+    // Body of the if statement can be added here
+  }
 
-const callMyNightSky = () => {
-  stars = 'Sirius'; // 1.Overwriting the global variable
-	return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+  console.log(lightWaves);
 };
 
-console.log(callMyNightSky());
-console.log(stars); // Logs 'Sirius'
+logVisibleLightWaves();
