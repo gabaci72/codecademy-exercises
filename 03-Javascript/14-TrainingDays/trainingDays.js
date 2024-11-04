@@ -34,6 +34,5 @@ const logTime = (name, days) => {
 const event = getRandEvent();
 const days = getTrainingDays(event);
 
-// Pass name as the first argument
 logEvent(name, event);
 logTime(name, days);
