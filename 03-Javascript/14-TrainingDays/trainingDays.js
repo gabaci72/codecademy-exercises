@@ -1,4 +1,4 @@
-const name = 'Nala'; // Global name variable
+const name = 'Nala'; // Move name to global scope
 
 const getRandEvent = () => {
   const random = Math.floor(Math.random() * 3); // Move random inside the function
