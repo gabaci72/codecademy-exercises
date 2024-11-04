@@ -6,3 +6,6 @@ const logVisibleLightWaves = () => {
 
 //4.Call the logVisibleLightWaves() function from outside the function
 logVisibleLightWaves();
+
+// 5.Attempt to log lightWaves outside the function
+// console.log(lightWaves); // This will cause a ReferenceError
