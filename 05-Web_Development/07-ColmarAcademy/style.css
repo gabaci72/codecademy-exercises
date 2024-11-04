@@ -26,6 +26,9 @@ nav img {
 .nav-text {
   display: flex;
   align-items: center;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .colmar {
@@ -46,6 +49,9 @@ nav img {
 .nav-links {
   display: flex;
   align-items: center;
+  margin-left: auto; /* Push the links to the right */
+  margin-right: 20px;
+  list-style-type: none;
 }
 
 .nav-links a {
