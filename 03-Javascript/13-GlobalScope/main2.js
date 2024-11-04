@@ -1,5 +1,4 @@
-//1.define a function
+//define a function
 const logVisibleLightWaves = () => {
-    // Function logic will go here
-  };
-  
+  const lightWaves = 'Moonlight';//using const, create a variable lightWaves and set it equal to 'Moonlight'
+};
