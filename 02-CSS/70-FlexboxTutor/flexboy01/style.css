@@ -22,6 +22,7 @@ html {
     padding: 10px;
     margin: 10px;
     background: aqua;
+    display: flex;
   }
 
   /* Add your flexbox CSS below here */
