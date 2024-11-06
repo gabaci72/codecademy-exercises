@@ -1,6 +1,12 @@
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
+    height: 100%;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* justify-content: center; */
     /* justify-content: flex-end; */
   }
 
@@ -22,11 +28,13 @@
 
   .logout {
     /* margin-left: auto; */
-    flex: 1;
+    /* flex: 1; */
+    align-self: flex-start;
   }
 
   .home {
     /* margin-right: auto; */
     /* flex: 2; */ 
-    flex: 1;
+    /* flex: 1; */
+    align-self: flex-end;
   }
