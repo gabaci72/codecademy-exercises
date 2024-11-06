@@ -20,7 +20,7 @@
     /* align-items: center;  */
     /* align-items: stretch; */
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .container > div {
@@ -31,7 +31,7 @@
     /* flex: 1; */
         /* flex: 1; */
     /* width: 33.33%; */
-    width: 300px;
+    /* width: 300px; */
   }
 
   .container > .search {
@@ -46,11 +46,20 @@
     /* margin-left: auto; */
     /* flex: 1; */
     /* align-self: flex-start; */
+     flex: 1 1 200px;  /* flex-grow: 1 ; flex-shrink: 1 ; flex-basis: 0; */
+    /* flex-grow: 0; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 200px; */
   }
+
 
   .home {
     /* margin-right: auto; */
     /* flex: 2; */ 
     /* flex: 1; */
     /* align-self: flex-end; */
+    flex: 1 1 200px; /* flex-grow: 1 ; flex-shrink: 1 ; flex-basis: 0; */
+    /* flex-grow: 0; */
+    /* flex-shrink: 5; */
+    /* flex-basis: 200px;    */
   }
