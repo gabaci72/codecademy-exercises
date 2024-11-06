@@ -5,13 +5,28 @@
   }
 
   .container > div {
-    /* flex: 1; */
-    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+        /* flex: 1; */
+    /* width: 33.33%; */
   }
+
+  .container > .search {
+    /* flex: 2; */
+  }
+
+  .search {
+    /* flex: 2; */
+  }
+
   .logout {
     /* margin-left: auto; */
+    flex: 1;
   }
 
   .home {
     /* margin-right: auto; */
+    /* flex: 2; */ 
+    flex: 1;
   }
