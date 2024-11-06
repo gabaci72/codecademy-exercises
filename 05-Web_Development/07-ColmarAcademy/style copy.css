@@ -1,0 +1,39 @@
+header {
+    align-items: center;/*This property ensures that elements within the header are vertically centered.*/
+    background-color: #FFF;
+    border-bottom: 1px solid #999;/*It draws a thin gray border below the header. This feature helps to separate the header from the main content.*/
+    display: flex; /*It allows elements within the header to be aligned with a flexible layout (flexbox). This way, the logo and menu items are lined up horizontally.*/
+    height: 4rem;
+    justify-content: space-between; /*It leaves space between the elements in the header. With this feature, the logo is aligned to the left and the menu links are aligned to the right.*/
+    left: 0; /*It fixes the position of the header to the top left corner of the screen. The position: fixed; property is important to see the effect of these features.*/
+    padding: 0 1.5rem; /*This property defines the space around the content of an element. I*/
+    position: fixed;/*It ensures that the header remains fixed throughout the page. Even if the page is scrolled, the header remains fixed at the top.*/
+    top: 0;
+    width: 100%; /*Makes the width of the header the full screen width.*/
+    z-index: 2; /*It ensures that the header remains above other content. Thanks to this feature, the header is guaranteed to be in the foreground.*/
+  }
+  /* header #logo {
+    align-items: center;
+    display: flex;
+  } */
+  /* header img {
+    vertical-align: middle;
+    width: 2rem;
+  } */
+  /* header #logo-text {
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 500;
+  } */
+  /* header #logo-text-2 {
+    color: #999;
+    font-size: 1.25rem;
+    font-weight: 500;
+  } */
+  /* header ul.desktop, footer ul {
+    display: inline-flex;
+  } */
+  /* header ul.mobile {
+    display: none;
+  } */
+  
