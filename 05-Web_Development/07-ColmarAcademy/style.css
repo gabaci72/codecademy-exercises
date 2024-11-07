@@ -103,6 +103,11 @@ nav {
   background-color: #0056b3;
 }
 
+
+
+
+
+
 /* For mobile */
 @media (max-width: 768px) {
   .hero {
@@ -121,3 +126,51 @@ nav {
 }
 
 
+/* Campus section styles */
+.content-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 32px; /* Adjust gap based on your spacing needs */
+}
+.content-info > .main-info-img, .content-info > .right-column {
+  padding: 24px;
+}
+
+.content-info h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.main-info-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.small-image {
+  width: 35%;
+  margin-bottom: 16px;
+}
+
+.medium-image {
+  width: 65%;
+  margin-bottom: 16px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .content-info {
+    grid-template-columns: 1fr;
+  }
+  .main-info-img, .small-image, .medium-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
