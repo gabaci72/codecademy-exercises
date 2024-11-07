@@ -46,7 +46,7 @@ nav {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   background-color: #625e5e8e; 
 }
@@ -62,13 +62,14 @@ nav {
   height: auto;
   border-radius: 8px;
 }
-
 .hero-content {
-  width: 55%; 
-  padding: 20px;
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Adjust width as needed */
 }
+
 
 .hero h1 {
   font-size: 2em;
