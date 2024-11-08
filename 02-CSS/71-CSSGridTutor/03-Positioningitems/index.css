@@ -5,23 +5,23 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 40px auto 40px;
     grid-template-areas: 
-       "h h h h h h h h h h h h"
-       "m c c c c c c c c c c c"
-       "f f f f f f f f f f f f";
+        ". h h h h h h h h h h ."
+        "m c c c c c c c c c c c"
+        ". f f f f f f f f f f .";
 }
 
 .header {
-    /* grid-column-start: 1; */
-    /* grid-column-end: 3; */
-    grid-column: 1 / -1; /* Starts from column 1 and fills the entire width.*/
+    grid-area: h;
 }
 
-.menu {}
+.menu {
+    grid-area: m;
+}
 
 .content {
-    grid-column: 1 / -1;/* Starts from column 1 and fills the entire width.*/
+    grid-area: c;
 }
 
 .footer {
-    grid-column: 1 / -1;/* Starts from column 1 and fills the entire width.*/
+    grid-area: f;
 }
