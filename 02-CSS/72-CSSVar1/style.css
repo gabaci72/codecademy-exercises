@@ -216,7 +216,7 @@ img.artist-img {
   --custom-artist-color: #d6e9f5;
   --description-text-color: var(--custom-artist-color);
   font-size: var(--description-font-size);
-  color: black;
+  color: var(--description-text-color);
   font-weight: 200;
 }
 
