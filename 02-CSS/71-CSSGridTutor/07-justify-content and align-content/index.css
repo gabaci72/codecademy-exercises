@@ -6,7 +6,7 @@
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(2, 100px);
     /* justify-content: baseline; */
-    /* justify-content: center; */
+    justify-content: center;
     /* justify-content: end; */
     /* justify-content: start; */
     /* justify-content: first baseline; */
@@ -36,7 +36,7 @@
     /* align-content: center; */
     /* align-content: stretch; */
     /* align-content: baseline; */
-    /* align-content: end; */
+    align-content: end;
     /* align-content: start; */
     /* align-content: first baseline; */
     /* align-content: flex-end; */
