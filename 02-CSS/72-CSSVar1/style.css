@@ -31,6 +31,9 @@ h4 {
   text-decoration-line: overline;
   text-decoration-style: wavy;
 }
+:root {
+  /* CSS variables can be declared here */
+}
 
 .container {  
   width: 80%;
@@ -51,7 +54,6 @@ h4 {
 }
   
 .btn {
-  --button-text-color: #a5dce4;
   margin: 10px 20px 10px 20px;
   display: inline-block;
   text-decoration: none;
@@ -59,6 +61,7 @@ h4 {
   font-size: 1.15rem;
   font-weight: 700;
   text-transform: uppercase;
+  --button-text-color: #a5dce4;
   color: var(--button-text-color);
   background: #2c365e;
   border-radius: 7px;
@@ -66,7 +69,6 @@ h4 {
   outline: none;
   border: 1px solid black;
 }
-
   
 .btn:hover,
 .btn:focus {
@@ -89,18 +91,17 @@ h4 {
 }
   
 .hero {
-  --main-header-color: #c1bbbb;
   text-align: center;
   padding: 180px 0;
   background: #753f83;
-  color: var(--main-header-color);
+  --main-header-color: #c1bbbb;
+  color: var( --main-header-color);
   opacity: .8;
   background-image: url('https://static-assets.codecademy.com/Courses/Learn-CSS/Variables/Lesson/record.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
   
 .spacing > * + * {
   margin-top:  2rem;
@@ -127,7 +128,7 @@ img.artist-img {
 }
   
 .featured-img {
-    border: 8px solid black;
+  border: 8px solid black;
 }
   
 .featured-artist {
@@ -214,12 +215,11 @@ img.artist-img {
 .artist-description {
   --description-font-size: 1rem;
   --custom-artist-color: #d6e9f5;
-  --description-text-color: var(--custom-artist-color);
+  --description-text-color: var( --custom-artist-color);
   font-size: var(--description-font-size);
   color: var(--description-text-color);
   font-weight: 200;
 }
-
    
 .footer-container {
   background: #333;
