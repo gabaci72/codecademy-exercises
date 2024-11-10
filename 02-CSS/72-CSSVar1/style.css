@@ -95,7 +95,7 @@ h4 {
   line-height: 1;
   color: #17353d;
 }
-  
+
 
   
 .hero {
@@ -202,14 +202,16 @@ img.artist-img {
 }
   
   
-.artist-title {
-  font-size: 2rem;
+..artist-title {
+  --sub-title-text-size: 1.8rem;
+  font-size: var(--sub-title-text-size);
   text-transform: uppercase;
   line-height: 1;
   color: #fff;
   text-align: center;
   text-shadow: 2px 2px 2rem black;  
 }
+
     
 .artist-img {
   display: inline-block;
@@ -231,8 +233,9 @@ img.artist-img {
 }
    
 .footer-container {
-  background: #333;
-  color:white;
+  --main-header-color: #7D6B91;
+  background: var(--main-header-color);
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -240,6 +243,7 @@ img.artist-img {
   position: relative;
   z-index: 1;
 }
+
     
 .footer-section-left {
   display: flex;
