@@ -14,8 +14,12 @@
 
 .header {
     grid-column: 1 / -1;
+    display: flex;
+    /* justify-content: space-evenly; */
 }
-
+.header > div:nth-child(3) {
+    margin-left: auto;
+}
 .menu {
     grid-column: 1 / 2;
 }
