@@ -181,6 +181,7 @@ img.artist-img {
   
   
 .artist {
+  background: var(--group-one-background-color);
   background: #a01c32;
   padding: 48px;
   border-radius: 40px;
@@ -190,8 +191,9 @@ img.artist-img {
 }
   
 .artist:nth-child(even) {
-  /*For exercise 4*/
+  background: var(--group-two-background-color);
 }
+
   
   
 .artist-title {
