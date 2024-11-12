@@ -73,32 +73,30 @@ footer {
     width: 100%;
     bottom: 0;
 }
-/* Set the body to have a minimum height and display flex for centering */
-/* body {
-    display: flex;
-    justify-content: center; /* Horizontally centers children elements */
-    /* align-items: center; Vertically centers children elements */
-    /* min-height: 100vh; Ensures the body takes at least the full viewport height */
-    /* margin: 0; Remove default margin for better centering */
-} */
 
-/* Container for the button to ensure it's centered horizontally */
-.button-container {
-    text-align: center; /* Centers the content inside this container */
-}
-
-/* Styling the GitHub login button */
-.github-button {
-    background-color: #24292d; /* GitHub button color */
-    color: white; /* Text color is white for contrast against dark background */
-    border: none; /* Remove borders */
-    padding: 10px 20px; /* Padding inside the button for better spacing */
-    font-size: 16px; /* Font size of the text inside the button */
-    border-radius: 25px; /* Rounded corners, making it look like a GitHub login button */
-    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
-}
-
-/* Adding hover effect for better user interaction */
-.github-button:hover {
-    background-color: #1b1f23; /* Darker shade of GitHub button color on hover */
-}
+/* Center the container horizontally */
+.container {
+    text-align: center;
+    margin-top: 20px; /* Add space above the button */
+  }
+  
+  /* Style the rounded button */
+  .rounded-button {
+    background-color: #24292d; /* Twitter blue color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 0px; /* Round the corners */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Font size of the text */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+  }
+  
+  /* Change the background color when hovering over the button */
+  .rounded-button:hover {
+    background-color: #555b61; /* Brighter color on hover */
+  }
+  
+  /* Change the background color when the button is clicked */
+  .rounded-button:active {
+    background-color: #1c1f21; /* Even brighter color on click */
+  }

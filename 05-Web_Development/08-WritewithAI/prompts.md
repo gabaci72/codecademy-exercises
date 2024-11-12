@@ -22,3 +22,17 @@ generate function
 fonksiyon
 suggest improvements 
 iyileştirmeler öner
+
+## Button hover and click
+Generate the necessary CSS for adding hover and click effects on the button with a background color of #24292d. Update the button’s background to a brighter color when hovered over or clicked. Don’t forget to add a comment next to each CSS property.
+
+## Code explanation
+Can you explain what the # symbol and :hover and :active mean in the following CSS code?
+
+.rounded-button:hover {
+  background-color: #555b61;
+}
+
+.rounded-button:active {
+  background-color: #1c1f21;
+}
