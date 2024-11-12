@@ -1,3 +1,15 @@
+/*
+  Challenge:
+  Turn the button into a "Login with GitHub" button.
+
+  This will require you to modify two lines of code in the CSS file 
+  and one line of code in the HTML file.
+
+  PS: The color code for the background of the GitHub button
+  is #24292d.
+*/
+
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -60,4 +72,33 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+/* Set the body to have a minimum height and display flex for centering */
+/* body {
+    display: flex;
+    justify-content: center; /* Horizontally centers children elements */
+    /* align-items: center; Vertically centers children elements */
+    /* min-height: 100vh; Ensures the body takes at least the full viewport height */
+    /* margin: 0; Remove default margin for better centering */
+} */
+
+/* Container for the button to ensure it's centered horizontally */
+.button-container {
+    text-align: center; /* Centers the content inside this container */
+}
+
+/* Styling the GitHub login button */
+.github-button {
+    background-color: #24292d; /* GitHub button color */
+    color: white; /* Text color is white for contrast against dark background */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Padding inside the button for better spacing */
+    font-size: 16px; /* Font size of the text inside the button */
+    border-radius: 25px; /* Rounded corners, making it look like a GitHub login button */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+}
+
+/* Adding hover effect for better user interaction */
+.github-button:hover {
+    background-color: #1b1f23; /* Darker shade of GitHub button color on hover */
 }
