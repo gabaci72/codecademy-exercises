@@ -24,3 +24,9 @@ console.log(secretMessage.length);
 // Remove the first string from the secretMessage array
 secretMessage.shift();
 console.log(secretMessage.length);
+
+/* 6.Use an array method to add the string Programming to the beginning of the array.*/
+
+// Add 'Programming' to the beginning of the secretMessage array
+secretMessage.unshift('Programming');
+
