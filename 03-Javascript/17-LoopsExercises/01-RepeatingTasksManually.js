@@ -8,3 +8,4 @@ console.log(vacationSpots[0]);
 console.log(vacationSpots[1]);
 console.log(vacationSpots[2]);
 
+/* 3.Nice work! Now imagine that the vacation list had 100 places on it— logging each array element to the console by hand would be a tedious task! In the next exercise, we will learn how to make things more efficient with for loops.*/
