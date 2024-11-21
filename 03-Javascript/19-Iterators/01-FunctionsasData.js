@@ -8,6 +8,9 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
 
 // Write your code below
 
-/* Using const, declare a shorter-named variable, isTwoPlusTwo that will be easier to work with.
- Assign checkThatTwoPlusTwoEqualsFourAMillionTimes as its value.*/
- const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+/* Using const, declare a shorter-named variable, isTwoPlusTwo that will be easier to work with. Assign checkThatTwoPlusTwoEqualsFourAMillionTimes as its value.*/
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+/* Invoke your isTwoPlusTwo() function.*/
+isTwoPlusTwo();
+
