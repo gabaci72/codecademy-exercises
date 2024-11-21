@@ -30,10 +30,25 @@ Comment out this code when you’re ready to move on.*/
 iterate through the vowels array each time the outer loop runs.
 
 This will enable you to check each letter of input against all the vowels elements during each iteration.*/
+// for (let i = 0; i < input.length; i++) {
+//   //console.log('input is ' + i);
+//   for (let j = 0; j < vowels.length; j++) {
+//     console.log('vowels is ' + j);
+//     // Code to compare input[i] with vowels[j] will go here
+//   }
+// }
+/* 7.To check your work, log the iterator number positions inside the inner for loop and run your code. 
+You should see 0 through 4 repeatedly because vowels is 5 elements long.*/
+
 for (let i = 0; i < input.length; i++) {
+   console.log('input is ' + i);
   for (let j = 0; j < vowels.length; j++) {
-    // Code to compare input[i] with vowels[j] will go here
+   console.log('vowels is ' + j);
   }
 }
 
+/* 8.Inside the second for loop, write a code block that compares the input letter to every letter in the vowels array.
 
+Note: To check that everything is working properly, log letter matches to the console.
+
+*/
