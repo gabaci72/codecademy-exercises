@@ -97,6 +97,26 @@ Note: This statement belongs before the inner for loop block inside the outer fo
 
 /* 11.Next, you want to double the letter u.*/
 
+// for (let i = 0; i < input.length; i++) {
+//   if (input[i] === 'e') {
+//     resultArray.push(input[i]);
+//     resultArray.push(input[i]); // Add 'e' again to double it
+//   }
+//   if (input[i] === 'u') {
+//     resultArray.push(input[i]);
+//     resultArray.push(input[i]); // Add 'u' again to double it
+//   }
+//   for (let j = 0; j < vowels.length; j++) {
+//     if (input[i] === vowels[j]) {
+//       resultArray.push(input[i]);
+//     }
+//   }
+// }
+// console.log(resultArray);//12.At the bottom of the program, log the resultArray to the console.
+
+/* 13.Currently, resultArray outputs an array of characters. To produce proper whale language, we want to capitalize the array elements and put them together as one string.
+
+Declare a variable resultString that joins our resultArray into a single string and capitalizes all of its letters.*/
 for (let i = 0; i < input.length; i++) {
   if (input[i] === 'e') {
     resultArray.push(input[i]);
@@ -112,5 +132,12 @@ for (let i = 0; i < input.length; i++) {
     }
   }
 }
-console.log(resultArray);//12.At the bottom of the program, log the resultArray to the console.
+// console.log(resultArray);
+const resultString = resultArray.join('').toUpperCase();
+
+console.log(resultString);
+
+/* 14.Run the program and sing the output out loud — you officially speak whale!
+
+Note: To confirm, if you change the value of input to ‘turpentine and turtles’, the whale version would read: 'UUEEIEEAUUEE'.*/
 
