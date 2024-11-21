@@ -75,3 +75,23 @@ for (let i = 0; i < input.length; i++) {
 
 console.log(resultArray);
 
+/* 10.Whales double their e‘s and the u‘s in their language.
+
+Write an if statement that checks if each letter in the input string is 
+equal to 'e'. If so, use the .push() method to add input[i] to the resultArray.
+
+Note: This statement belongs before the inner for loop block inside the outer for loop.
+ This is because you only want to perform this check once for every letter in the input.*/
+ 
+for (let i = 0; i < input.length; i++) {
+  if (input[i] === 'e') {
+    resultArray.push(input[i]);
+    resultArray.push(input[i]); // Add 'e' again to double it
+  }
+  for (let j = 0; j < vowels.length; j++) {
+    if (input[i] === vowels[j]) {
+      resultArray.push(input[i]);
+    }
+  }
+}
+
