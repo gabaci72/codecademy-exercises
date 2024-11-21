@@ -65,15 +65,15 @@ Note: To check that everything is working properly, log letter matches to the co
 Note: To check your work use console.log() to print your resultArray. 
 The letters you logged to the console in step 8 should be now included in your resultArray.*/
 
-for (let i = 0; i < input.length; i++) {
-  for (let j = 0; j < vowels.length; j++) {
-    if (input[i] === vowels[j]) {
-      resultArray.push(input[i]);
-      }
-  }
-}
+// for (let i = 0; i < input.length; i++) {
+//   for (let j = 0; j < vowels.length; j++) {
+//     if (input[i] === vowels[j]) {
+//       resultArray.push(input[i]);
+//       }
+//   }
+// }
 
-console.log(resultArray);
+// console.log(resultArray);
 
 /* 10.Whales double their e‘s and the u‘s in their language.
 
@@ -83,10 +83,28 @@ equal to 'e'. If so, use the .push() method to add input[i] to the resultArray.
 Note: This statement belongs before the inner for loop block inside the outer for loop.
  This is because you only want to perform this check once for every letter in the input.*/
  
+// for (let i = 0; i < input.length; i++) {
+//   if (input[i] === 'e') {
+//     resultArray.push(input[i]);
+//     resultArray.push(input[i]); // Add 'e' again to double it
+//   }
+//   for (let j = 0; j < vowels.length; j++) {
+//     if (input[i] === vowels[j]) {
+//       resultArray.push(input[i]);
+//     }
+//   }
+// }
+
+/* 11.Next, you want to double the letter u.*/
+
 for (let i = 0; i < input.length; i++) {
   if (input[i] === 'e') {
     resultArray.push(input[i]);
     resultArray.push(input[i]); // Add 'e' again to double it
+  }
+  if (input[i] === 'u') {
+    resultArray.push(input[i]);
+    resultArray.push(input[i]); // Add 'u' again to double it
   }
   for (let j = 0; j < vowels.length; j++) {
     if (input[i] === vowels[j]) {
@@ -94,4 +112,5 @@ for (let i = 0; i < input.length; i++) {
     }
   }
 }
+console.log(resultArray);//12.At the bottom of the program, log the resultArray to the console.
 
