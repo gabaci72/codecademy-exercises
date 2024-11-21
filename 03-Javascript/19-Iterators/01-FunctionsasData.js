@@ -14,3 +14,5 @@ const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
 /* Invoke your isTwoPlusTwo() function.*/
 isTwoPlusTwo();
 
+/* Use isTwoPlusTwo to console.log() the name property of the function we assigned to isTwoPlusTwo.*/
+console.log(isTwoPlusTwo.name);
