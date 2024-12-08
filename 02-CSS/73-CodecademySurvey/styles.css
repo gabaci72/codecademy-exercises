@@ -89,7 +89,7 @@ h2 {
   color: #000000;
   display: flex;
   flex: 2;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 30px 20px;
@@ -119,8 +119,10 @@ h2 {
 .protected-link-container {
   text-align: right;
   padding: 20px 0;
+}
+
+.protected-link-container a {
   display: none;
-  //visibility: hidden;
 }
 
 .input-container {
@@ -131,4 +133,14 @@ h2 {
 .input-container label {
   padding: 5px 0;
   font-size: 20px;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+
+  a[href^="http"]:after {
+    content: " ("attr(href) ")";
+  }
 }
