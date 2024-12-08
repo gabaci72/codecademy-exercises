@@ -21,7 +21,6 @@ a:visited {
   color: purple;
 }
 
-
 input[type="text"] {
   display: block;
   width: 100%;
@@ -120,6 +119,8 @@ h2 {
 .protected-link-container {
   text-align: right;
   padding: 20px 0;
+  display: none;
+  //visibility: hidden;
 }
 
 .input-container {
